@@ -1,0 +1,46 @@
+{
+  "usuarios": [
+    { "email": "admin@coopfinanzas.com.co",      "password": "Admin@2026!",  "nombre": "Sofía Martínez",   "rol": "Administrador" },
+    { "email": "operador@coopfinanzas.com.co",   "password": "Oper@2026!",   "nombre": "Carlos Duarte",    "rol": "Operador" },
+    { "email": "supervisor@coopfinanzas.com.co", "password": "Super@2026!",  "nombre": "María Suárez",     "rol": "Supervisor" }
+  ],
+  "casos": [
+    { "id": "FPQRS-2026-04779", "fecha": "04/05/2026", "tipo": "Queja",        "servicio": "Pagos y Transferencias", "categoria": "Pago PSE",               "subcategoria": "Pago PSE no acreditado en destino",          "asociado": "Jorge Luis Patiño Restrepo",    "responsable": "Rodrigo Esteban Muñoz", "prioridad": "Crítica", "estado": "Pendiente",   "limite": "04/05/2026", "sla": "rojo"     },
+    { "id": "FPQRS-2026-04758", "fecha": "07/05/2026", "tipo": "Felicitación", "servicio": "Atención al Asociado",   "categoria": "Atención Presencial",    "subcategoria": "Felicitación por excelente atención",        "asociado": "Sandra Milena Aguirre Torres",  "responsable": "Valentina Ospina Ríos", "prioridad": "Baja",    "estado": "Cerrado",     "limite": "09/05/2026", "sla": "gris"     },
+    { "id": "FPQRS-2026-04290", "fecha": "07/05/2026", "tipo": "Sugerencia",   "servicio": "Pagos y Transferencias", "categoria": "Transferencias Nacionales","subcategoria": "Comprobante de transferencia",                "asociado": "Yolanda Cecilia Prada Niño",    "responsable": "Jorge Iván Castillo",   "prioridad": "Baja",    "estado": "Radicado",    "limite": "08/05/2026", "sla": "verde"    },
+    { "id": "FPQRS-2026-04760", "fecha": "07/05/2026", "tipo": "Sugerencia",   "servicio": "Canales Digitales",      "categoria": "App Móvil",               "subcategoria": "Sugerencia de nueva funcionalidad en app",   "asociado": "Andrés Camilo Rojas Velandia", "responsable": "Iván Darío Zapata",     "prioridad": "Baja",    "estado": "Radicado",    "limite": "12/05/2026", "sla": "verde"    },
+    { "id": "FPQRS-2026-04510", "fecha": "07/05/2026", "tipo": "Sugerencia",   "servicio": "Atención al Asociado",   "categoria": "Atención Virtual",        "subcategoria": "Chat sin respuesta oportuna",                "asociado": "Beatriz Elena Montoya Arango", "responsable": "Patricia Inés Agudelo", "prioridad": "Normal",  "estado": "Radicado",    "limite": "08/05/2026", "sla": "verde"    },
+    { "id": "FPQRS-2026-04700", "fecha": "06/05/2026", "tipo": "Sugerencia",   "servicio": "Canales Digitales",      "categoria": "Portal Web",              "subcategoria": "Sugerencia de mejora en portal web",         "asociado": "Patricia Inés Londoño Vélez",  "responsable": "Iván Darío Zapata",     "prioridad": "Baja",    "estado": "Radicado",    "limite": "07/05/2026", "sla": "amarillo" },
+    { "id": "FPQRS-2026-04035", "fecha": "06/05/2026", "tipo": "Sugerencia",   "servicio": "Ahorro y Captación",     "categoria": "CDT",                     "subcategoria": "Error en tasa de CDT",                       "asociado": "Diana Marcela Ríos Castillo",  "responsable": "Camilo Ernesto Herrera","prioridad": "Baja",    "estado": "Radicado",    "limite": "11/05/2026", "sla": "verde"    },
+    { "id": "FPQRS-2026-04610", "fecha": "06/05/2026", "tipo": "Sugerencia",   "servicio": "Crédito",                "categoria": "Refinanciación de Crédito","subcategoria": "Inconformidad con condiciones de refinanciación","asociado": "Beatriz Elena Montoya Arango","responsable": "Diana Carolina Ríos",   "prioridad": "Baja",    "estado": "Radicado",    "limite": "09/05/2026", "sla": "verde"    },
+    { "id": "FPQRS-2026-04200", "fecha": "06/05/2026", "tipo": "Sugerencia",   "servicio": "Cartera y Cobranza",     "categoria": "Reestructuración de Crédito","subcategoria": "Demora en proceso de reestructuración",      "asociado": "Patricia Inés Londoño Vélez",  "responsable": "Adriana Milena Cortés", "prioridad": "Baja",    "estado": "Radicado",    "limite": "09/05/2026", "sla": "verde"    },
+    { "id": "FPQRS-2026-04450", "fecha": "06/05/2026", "tipo": "Sugerencia",   "servicio": "Crédito",                "categoria": "Crédito de Consumo",      "subcategoria": "Solicitud de refinanciación",                "asociado": "Andrés Camilo Rojas Velandia", "responsable": "Carlos Andrés Moreno",  "prioridad": "Baja",    "estado": "Radicado",    "limite": "11/05/2026", "sla": "verde"    },
+    { "id": "FPQRS-2026-04751", "fecha": "06/05/2026", "tipo": "Reclamo",      "servicio": "Ahorro y Captación",     "categoria": "Cuenta de Ahorro",        "subcategoria": "Saldo incorrecto en cuenta",                 "asociado": "Hernán Darío Quintero Salazar","responsable": "Marcela Suárez Peña",   "prioridad": "Alta",    "estado": "En Gestión",  "limite": "07/05/2026", "sla": "amarillo" },
+    { "id": "FPQRS-2026-04100", "fecha": "05/05/2026", "tipo": "Petición",     "servicio": "Crédito",                "categoria": "Crédito Hipotecario",     "subcategoria": "Información sobre tasas de crédito hipotecario","asociado": "Carlos Eduardo Vargas León",   "responsable": "Luisa Fernanda Gómez",  "prioridad": "Normal",  "estado": "Asignado",    "limite": "10/05/2026", "sla": "verde"    },
+    { "id": "FPQRS-2026-03980", "fecha": "05/05/2026", "tipo": "Reclamo",      "servicio": "Seguros y Protección",   "categoria": "Seguro de Vida",          "subcategoria": "Demora en pago de siniestro",                "asociado": "Marta Lucía Restrepo Díaz",    "responsable": "Rodrigo Esteban Muñoz", "prioridad": "Alta",    "estado": "En Gestión",  "limite": "06/05/2026", "sla": "rojo"     },
+    { "id": "FPQRS-2026-03850", "fecha": "04/05/2026", "tipo": "Queja",        "servicio": "Canales Digitales",      "categoria": "Banca en Línea",          "subcategoria": "Error al generar extracto en línea",         "asociado": "Felipe Andrés Cardona Ríos",   "responsable": "Iván Darío Zapata",     "prioridad": "Normal",  "estado": "Pendiente",   "limite": "05/05/2026", "sla": "rojo"     },
+    { "id": "FPQRS-2026-03720", "fecha": "03/05/2026", "tipo": "Reclamo",      "servicio": "Pagos y Transferencias", "categoria": "Cobro de Comisiones",     "subcategoria": "Cobro no autorizado de comisión",            "asociado": "Gloria Inés Martínez Pérez",   "responsable": "Diana Carolina Ríos",   "prioridad": "Alta",    "estado": "Respondido",  "limite": "05/05/2026", "sla": "gris"     }
+  ],
+  "historial": [
+    { "fecha": "07/05/2026 09:15", "usuario": "Sistema",                 "accion": "Caso radicado automáticamente vía App Móvil. Canal: App Móvil." },
+    { "fecha": "07/05/2026 09:16", "usuario": "Sistema",                 "accion": "SLA calculado: 4 horas. Fecha límite: 04/05/2026 22:00." },
+    { "fecha": "07/05/2026 09:20", "usuario": "Valentina Ospina Ríos",   "accion": "Caso asignado a Rodrigo Esteban Muñoz — Operaciones Financieras." },
+    { "fecha": "07/05/2026 10:05", "usuario": "Rodrigo Esteban Muñoz",   "accion": "Observación registrada: Se inicia verificación con PSE y Davivienda." },
+    { "fecha": "07/05/2026 14:30", "usuario": "Rodrigo Esteban Muñoz",   "accion": "Estado cambiado a Pendiente de Información. Se solicita soporte al asociado." },
+    { "fecha": "07/05/2026 14:31", "usuario": "Sistema",                 "accion": "Notificación enviada al asociado solicitando documentos adicionales." }
+  ],
+  "categorias": {
+    "Crédito": ["Crédito de Consumo","Crédito Hipotecario","Crédito Libre Inversión","Libranza","Microcrédito","Refinanciación de Crédito"],
+    "Ahorro y Captación": ["Cuenta de Ahorro","Cuenta Corriente","CDT","Ahorro Programado","Cuenta de Menores"],
+    "Canales Digitales": ["App Móvil","Banca en Línea","Portal Web","Cajeros Automáticos","Corresponsales"],
+    "Atención al Asociado": ["Atención Presencial","Atención Virtual","Call Center","Atención por Correo"],
+    "Pagos y Transferencias": ["Pago PSE","Transferencias Nacionales","Cobro de Comisiones","Pagos de Servicios"],
+    "Seguros y Protección": ["Seguro de Vida","SOAT","Seguro de Hogar","Seguro de Desempleo"],
+    "Inversiones": ["Fondos de Inversión","Títulos Valores","Portafolio de Inversiones"],
+    "Centrales de Riesgo": ["Reporte en DataCrédito","Reporte en TransUnion","Solicitud de Levantamiento"],
+    "Educación Cooperativa": ["Capacitaciones","Talleres","Material Educativo"],
+    "Vinculación y Retiro": ["Proceso de Vinculación","Retiro Voluntario","Retiro Forzoso"],
+    "Cartera y Cobranza": ["Reestructuración de Crédito","Cobro Prejurídico","Cobro Jurídico","Acuerdo de Pago"],
+    "Certificaciones y Documentos": ["Certificado de Deuda","Certificado de Pago","Paz y Salvo","Extractos"]
+  }
+}

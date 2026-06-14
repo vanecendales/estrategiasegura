@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es" class="__variable_a11773">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/pages/login.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid vh-100">
+        <div class="row h-100">
+
+            <aside class="col-md-6 sidebar d-none d-md-flex flex-column justify-content-between p-5 text-white">
+                <div>
+                    <div class="d-flex align-items-center mb-6 logo">
+                        <img src="../assets/images/logo.webp" width="40" height="48" alt="">
+                        <span class="fs-5">GestorFPQRS</span>
+                    </div>
+                    <h1 class="display-6 fw-bold mb-3">Gestión inteligente de casos FPQRS</h1>
+                    <p class="mb-5">Plataforma corporativa para la administración, seguimiento y resolución de casos de atención al asociado con trazabilidad completa y control de SLA.</p>
+                    <div class="vstack gap-3 mb-6">
+                        <div class="d-flex gap-3">
+                            <div class="sidebar-feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg>
+                            </div>
+                            <div>
+                                <div>Gestión integral FPQRS</div>
+                                <small class="opacity-55">Control total de Felicitaciones, Peticiones, Quejas, Reclamos y Sugerencias.</small>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3">
+                            <div class="sidebar-feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+                            </div>
+                            <div>
+                                <div>Monitoreo de SLA</div>
+                                <small class="opacity-55">Seguimiento en tiempo real de los tiempos de respuesta.</small>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3">
+                            <div class="sidebar-feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                            </div>
+                            <div>
+                                <div>Asignación automática</div>
+                                <small class="opacity-55">Responsables y prioridades asignados según parámetros configurados.</small>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3">
+                            <div class="sidebar-feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21v-6"></path><path d="M12 21V3"></path><path d="M19 21V9"></path></svg>
+                            </div>
+                            <div>
+                                <div>Trazabilidad completa</div>
+                                <small class="opacity-55">Historial detallado de cada acción realizada sobre los casos.</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <small class="opacity-55">© 2026 CoopFinanzas. Todos los derechos reservados.</small>
+                    <small class="opacity-55">Sistema de Gestión FPQRS v2.4.1 — Normativa SFC Colombia</small>
+                </div>
+            </aside>
+
+            <main class="col-md-6 content d-flex justify-content-center p-4">
+                <div class="login-wrapper">
+                    <div class="d-flex align-items-center gap-2 mb-4 d-lg-none">
+                        <img src="assets/images/app_logo.png" width="32" alt="">
+                        <span class="fw-bold text-primary">GestorFPQRS</span>
+                    </div>
+
+                    <div class="mb-5">
+                        <h4 class="fst-normal">Iniciar sesión</h4>
+                        <small class="mt-1">Ingrese sus credenciales para acceder al sistema.</small>
+                    </div>
+
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label d-block small mb-1.5">Correo electrónico</label>
+                            <input type="email" id="email" class="form-control rounded-3" placeholder="usuario@coopfinanzas.com.co">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label d-block small mb-1.5">Contraseña</label>
+                            <input type="password" id="password" class="form-control rounded-3" placeholder="••••••••">
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <div class="form-check">
+                                <input class="form-check-input rounded-1" type="checkbox">
+                                <label class="form-check-label">Recordar sesión</label>
+                            </div>
+                            <a href="#" class="text-decoration-none">¿Olvidó su contraseña?</a>
+                        </div>
+                        <button id="btn-login" type="button" class="btn btn-primary rounded-4 w-100">Ingresar al sistema</button>
+                    </form>
+
+                    <div class="mt-5 align-items-center">
+                        <div class="border rounded-3 overflow-hidden mb-5">
+                            <div class="px-3 py-2 bg-secondary-subtle">
+                                <p class="mb-0 text-uppercase text-secondary">Cuentas de demostración</p>
+                                <p class="mb-0 text-secondary small">Haga clic en una fila para autocompletar el formulario</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between px-3 py-2 border-top demo-item" data-email="admin@coopfinanzas.com.co" data-pass="Admin@2026!" role="button">
+                                <div>
+                                    <p class="mb-0 text-secondary">Administrador</p>
+                                    <p class="mb-0">admin@coopfinanzas.com.co</p>
+                                    <p class="mb-0 text-secondary">Admin@2026!</p>
+                                </div>
+                                <button type="button" class="btn-copy" data-value="Admin@2026!"><i class="bi bi-clipboard"></i></button>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between px-3 py-2 border-top demo-item" data-email="operador@coopfinanzas.com.co" data-pass="Oper@2026!" role="button">
+                                <div>
+                                    <p class="mb-0 text-secondary">Operador</p>
+                                    <p class="mb-0">operador@coopfinanzas.com.co</p>
+                                    <p class="mb-0 text-secondary">Oper@2026!</p>
+                                </div>
+                                <button type="button" class="btn-copy" data-value="Oper@2026!"><i class="bi bi-clipboard"></i></button>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between px-3 py-2 border-top demo-item" data-email="supervisor@coopfinanzas.com.co" data-pass="Super@2026!" role="button">
+                                <div>
+                                    <p class="mb-0 text-secondary">Supervisor</p>
+                                    <p class="mb-0">supervisor@coopfinanzas.com.co</p>
+                                    <p class="mb-0 text-secondary">Super@2026!</p>
+                                </div>
+                                <button type="button" class="btn-copy" data-value="Super@2026!"><i class="bi bi-clipboard"></i></button>
+                            </div>
+                        </div>
+                        <small class="text-secondary container-fluid mt-6">Sistema de uso interno. Acceso restringido a personal autorizado.</small>
+                    </div>
+
+                </div>
+            </main>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/pages/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+.p-5 {
+    padding: 2.5rem!important;
+}
+
+.sidebar{
+    width:44.5%
+}
+
+.content{
+    width:55.5%
+}
+
+.mb-6 {
+    margin-bottom: 4rem!important;
+}
+
+.logo span {
+    letter-spacing: -.025em;
+    padding-left: 0.75rem;
+}
+
+aside p {
+    line-height: 1.625;
+    color: var(--bs-texts-color);
+}
+
+.vstack {
+    font-size: .9em;
+}
+
+.opacity-55 {
+    opacity: 0.55;
+}
+.footer{
+    font-size: .8em;
+    color: var(--bs-texts-color);
+}
+.footer small {
+    display: block;
+}
+
+small.opacity-55:first-child {
+    font-size: 1em;
+}
+
+.login-wrapper h4 {
+    margin: 0;
+    font-weight: 400;
+}
+.form-label.small {
+    font-size: 0.88rem;
+}
+
+.login-wrapper small {
+    color: var(--bs-secondary-color);
+}
+
+.demo-item:hover {
+    background-color: var(--bs-secondary-bg);
+    cursor: pointer;
+}
+
+.btn-copy:hover i {
+    color: var(--bs-primary) !important;
+}
+
+.btn-copy i.copied {
+    color: var(--bs-success);
+}
+
+small.text-secondary.container-fluid.mt-6 {
+    text-align: center;
+    display: block;
+}
