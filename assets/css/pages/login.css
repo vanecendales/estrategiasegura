@@ -24,10 +24,6 @@ aside p {
     color: var(--bs-texts-color);
 }
 
-.vstack {
-    font-size: .9em;
-}
-
 .opacity-55 {
     opacity: 0.55;
 }
@@ -51,10 +47,6 @@ small.opacity-55:first-child {
     font-size: 0.88rem;
 }
 
-.login-wrapper small {
-    color: var(--bs-secondary-color);
-}
-
 .demo-item:hover {
     background-color: var(--bs-secondary-bg);
     cursor: pointer;
@@ -71,4 +63,9 @@ small.opacity-55:first-child {
 small.text-secondary.container-fluid.mt-6 {
     text-align: center;
     display: block;
+}
+
+.login-wrapper {
+    width: 100%;
+    max-width: 28rem;
 }
