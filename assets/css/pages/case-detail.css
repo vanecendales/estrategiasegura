@@ -8,7 +8,7 @@
 }
  
 .detail-value {
-    font-size: var(--bs-body-font-size-s);
+     font-size: 0.9rem;
     color: var(--bs-body-color);
     margin-bottom: 0;
 }
