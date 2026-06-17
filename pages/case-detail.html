@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>GestorFPQRS — Detalle de Caso</title>
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -18,101 +18,117 @@
 <body>
 
 <div class="d-flex vh-100 overflow-hidden">
+ <div id="sidebar"
+            class="d-flex z-3 position-relative justify-content-between text-nowrap flex-column p-0 text-white sidebar min-vh-100 position-relative"
+            style="width: 260px; transition: width .2s ease;">
 
-    <div id="sidebar" class="d-flex z-3 position-relative justify-content-between text-nowrap flex-column p-0 text-white sidebar min-vh-100 position-relative" style="width: 240px; transition: width .2s ease;">
-
-        <a href="#" class="position-relative mb-3 py-3 px-3 text-white text-decoration-none border-bottom border-white border-opacity-25 d-flex align-items-center gap-2">
-            <img src="../assets/images/logo.webp" height="32" width="32" alt="Logo" class="flex-shrink-0">
-            <span class="fs-6 sidebar-text fw-bold">GestorFPQRS</span>
-            <button id="sidebar-toggle" class="position-absolute top-50 end-0 translate-middle z-3 d-flex align-items-center justify-content-center bg-white border rounded-circle shadow-sm xxs-small" aria-label="Colapsar menú">
-                <i id="sidebar-toggle-icon" class="bi bi-chevron-left"></i>
-            </button>
-        </a>
-
-        <div class="mb-2 px-2">
-            <div class="text-uppercase text-white-50 xs-small px-2 mb-2 opacity-50 sidebar-text">Operación</div>
-            <ul class="nav nav-pills flex-column mb-auto gap-0">
-                <li class="nav-item">
-                    <a href="dashboard.html" class="nav-link text-white-50 d-flex align-items-center justify-content-between rounded-3 py-2 px-3">
-                        <span class="d-flex align-items-center gap-2 small">
-                            <i class="bi bi-folder2-open"></i>
-                            <span class="sidebar-text">Bandeja de Casos</span>
-                        </span>
-                        <span class="badge bg-danger rounded-pill px-2 py-2 sidebar-text">5</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="case-detail.html" class="nav-link active bg-white bg-opacity-10 text-white d-flex align-items-center gap-2 rounded-3 py-2 px-3 small">
-                        <i class="bi bi-file-earmark-text flex-shrink-0"></i>
-                        <span class="sidebar-text">Detalle de Caso</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 py-2 px-3 small">
-                        <i class="bi bi-list-check"></i>
-                        <span class="sidebar-text">Registrar FPQRS</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 py-2 px-3 small">
-                        <i class="bi bi-plus-square"></i>
-                        <span class="sidebar-text">Crear Caso (Operador)</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 py-2 px-3 small">
-                        <i class="bi bi-bar-chart"></i>
-                        <span class="sidebar-text">Métricas</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 py-2 px-3 small">
-                        <i class="bi bi-graph-up-arrow"></i>
-                        <span class="sidebar-text">Analítica</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 py-2 px-3 small">
-                        <i class="bi bi-download"></i>
-                        <span class="sidebar-text">Exportar Casos</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="mb-2 px-2">
-            <div class="text-uppercase text-white-50 xs-small px-2 mb-0 opacity-50 sidebar-text">Administración</div>
-            <ul class="nav nav-pills flex-column gap-1">
-                <li>
-                    <a href="#" class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 py-2 px-3 small">
-                        <i class="bi bi-shield-check flex-shrink-0"></i>
-                        <span class="sidebar-text">Auditoría</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <hr class="text-white opacity-25">
-
-        <div class="d-flex flex-column gap-1 mb-2 px-3">
-            <a href="#" class="small nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 mb-2 px-2 small">
-                <i class="bi bi-bell flex-shrink-0"></i>
-                <span class="sidebar-text">Notificaciones</span>
+            <a href="#"
+                class="position-relative mb-2 py-4 px-3 text-white text-decoration-none border-bottom border-white border-opacity-25 d-flex align-items-center gap-2">
+                <img src="../assets/images/logo.webp" height="32" width="32" alt="Logo" class="flex-shrink-0">
+                <span class="fs-6 fw-bold sidebar-text">GestorFPQRS</span>
+                <button id="sidebar-toggle"
+                    class="position-absolute top-50 end-0 translate-middle z-3 d-flex align-items-center justify-content-center bg-white border rounded-circle shadow-sm xxs-small"
+                    aria-label="Colapsar menú">
+                    <i id="sidebar-toggle-icon" class="bi bi-chevron-left" ></i>
+                </button>
             </a>
-            <div class="d-flex align-items-center px-2">
-                <div class="bg-secondary rounded-circle me-2 d-flex align-items-center justify-content-center text-white flex-shrink-0" style="width:28px;height:28px;font-size:.7rem;">SM</div>
-                <div class="d-flex flex-column lh-1 sidebar-text">
-                    <span class="text-white xs-small">Sofía Martínez</span>
-                    <small class="text-white-50">Administrador</small>
-                </div>
+
+            <div class=" mb-2 px-2">
+                        <div class="text-uppercase text-white-50 xxs-small px-2 mb-2 opacity-50 sidebar-text">
+                            Operación
+                        </div>
+                        <ul class="nav nav-pills flex-column mb-auto gap-0">
+                            <li class="nav-item">
+                                <a href="Dashboard.html"
+                                    class="nav-link text-white-50 d-flex justify-content-start align-items-center gap-2 rounded-3 pb-2 px-3 mb-1 small"
+                                    aria-current="page">
+                                    <span class="d-flex align-items-start gap-2 small">
+                                       <i class="bi bi-folder2-open"></i>
+                                        <span class="sidebar-text">Bandeja de Casos</span>
+                                    </span>
+                                    <span class="badge bg-danger rounded-pill px-2 py-2 sidebar-text">5</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="case-detail.html"
+                                    class="nav-link active bg-white bg-opacity-10 text-white  d-flex align-items-center justify-content-start gap-2 rounded-3 pb-2 px-3 mb-1">
+                                    <i class="bi bi-file-earmark-text flex-shrink-0"></i>
+                                    <span class="sidebar-text">Detalle de Caso</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="fpqr.html"
+                                    class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 pb-2 px-3 mb-1 small">
+                                    <i class="bi bi-list-check"></i>
+                                    <span class="sidebar-text">Registrar FPQRS</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 pb-2 px-3 mb-1 small">
+                                 <i class="bi bi-plus-square"></i>
+                                    <span class="sidebar-text">Crear Caso (Operador)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 pb-2 px-3 mb-1 small">
+                                    <i class="bi bi-bar-chart"></i>
+                                    <span class="sidebar-text">Métricas</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 pb-2 px-3 mb-1 small">
+                                   <i class="bi bi-graph-up-arrow"></i>
+                                    <span class="sidebar-text">Analítica</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 pb-2 px-3 mb-1 small">
+                                    <i class="bi bi-download"></i>
+                                    <span class="sidebar-text">Exportar Casos</span>
+                                </a>
+                            </li>
+                        </ul>
             </div>
-            <a href="#" class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 py-2 px-2 small mb-1">
-                <i class="bi bi-box-arrow-left flex-shrink-0"></i>
-                <span class="sidebar-text">Cerrar sesión</span>
-            </a>
-        </div>
 
-    </div>
+            <div class="mb-2 px-2">
+                <div class="text-uppercase text-white-50 xxs-small px-2 mb-0 opacity-50 sidebar-text">
+                    Administración
+                </div>
+                <ul class="nav nav-pills flex-column gap-1">
+                    <li>
+                        <a href="#" class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 pb-2 px-3 mb-1 small">
+                            <i class="bi bi-shield-check flex-shrink-0"></i>
+                            <span class="sidebar-text">Auditoría</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <hr class="text-white opacity-25">
+
+            <div class="d-flex flex-column gap-1 mb-2 px-3">
+                <a href="#" class="small nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 mb-2 px-2 small">
+                    <i class="bi bi-bell flex-shrink-0"></i>
+                    <span class="sidebar-text">Notificaciones</span>
+                </a>
+                <div class="d-flex align-items-center px-2">
+                    <div class="bg-secondary rounded-circle me-2 d-flex align-items-center justify-content-center flex-shrink-0" style="width:28px;height:28px;"><i class="bi bi-person"></i></div>
+                    <div class="d-flex flex-column lh-1 sidebar-text">
+                        <span class="text-white small">Sofía Martínez</span>
+                        <small class="text-white-50 opacity-50">Administrador</small>
+                    </div>
+                </div>
+                <a href="#" class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 py-2 px-2 small mb-1">
+                    <i class="bi bi-box-arrow-left flex-shrink-0"></i>
+                    <span class="sidebar-text">Cerrar sesión</span>
+                </a>
+            </div>
+
+        </div>
 
     <main class="flex-fill overflow-y-auto">
         <div class="px-4 py-4 px-lg-5">
@@ -129,7 +145,7 @@
                     <div class="d-flex align-items-center gap-2 flex-wrap mb-2">
                         <h1 class="m-0 fs-4 d-inline-flex align-items-center">FPQRS-2026-04779</h1>
                         <span class="badge-soft" style="background:#fefce8; color:var(--bs-orange);">Pendiente de Información</span>
-                        <span class="badge-soft" style="background:rgba(var(--bs-orange-rgb),.07); color:#a16207;">Queja</span>
+                        <span class="badge-soft" style="background:rgba(var(--bs-orange-rgb),.07); color:var(--bs-orange-rgb);">Queja</span>
                         <span class="badge-sla badge-sla-danger"><span class="sla-dot bg-danger"></span>Vencido</span>
                     </div>
                     <p class="xs-small text-secondary mb-0">Radicado el 04/05/2026 18:00 · Canal: App Móvil</p>
@@ -291,7 +307,7 @@
                             <div class="d-flex flex-column gap-3">
                                 <div class="d-flex align-items-center justify-content-between">
                                     <span class="xs-small text-secondary">Estado</span>
-                                    <span class="badge-soft" style="background:#fefce8; color:#a16207;">Pendiente de Información</span>
+                                    <span class="badge-soft" style="background:#fefce8; color:(var(--bs-orange-rgb),.07);">Pendiente de Información</span>
                                 </div>
                                 <div class="d-flex align-items-center justify-content-between">
                                     <span class="xs-small text-secondary">Prioridad</span>
