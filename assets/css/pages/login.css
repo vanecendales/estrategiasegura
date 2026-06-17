@@ -1,7 +1,3 @@
-.p-5 {
-    padding: 2.5rem!important;
-}
-
 .sidebar{
     width:44.5%
 }
@@ -10,27 +6,6 @@
     width:55.5%
 }
 
-.mb-6 {
-    margin-bottom: 4rem!important;
-}
-
-.logo span {
-    letter-spacing: -.025em;
-    padding-left: 0.75rem;
-}
-
-aside p {
-    line-height: 1.625;
-    color: var(--bs-texts-color);
-}
-
-.opacity-55 {
-    opacity: 0.55;
-}
-.footer{
-    font-size: .8em;
-    color: var(--bs-texts-color);
-}
 .footer small {
     display: block;
 }

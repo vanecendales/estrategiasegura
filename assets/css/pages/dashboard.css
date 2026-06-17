@@ -1,22 +1,8 @@
 .ring-danger {
-  box-shadow: 0 0 0 1px rgba(239,68,68,.2);
-}
-
-
-
-
-a.mb-4.py-3.px-3.text-white.text-decoration-none.border-bottom.border-white.border-opacity-25 {
-    display: flex;
-    align-items: center;
-}
-
-a.mb-4.py-3.px-3.text-white img {
-    margin: 0.3rem 1rem 0 0;
-}
-.d-flex.flex-column.lh-1 > * {
-    font-size: 0.7rem;
+    box-shadow: 0 0 0 1px rgba(239,68,68,.2);
 }
 
 .card-header, .table>:not(caption)>*>* {
     background: var(--bs-light);
 }
+

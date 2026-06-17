@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>GestorFPQRS — Detalle de Caso</title>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <link href="../assets/css/style.css" rel="stylesheet">
     <link href="../assets/css/pages/case-detail.css" rel="stylesheet">
 </head>
@@ -20,7 +23,7 @@
 
         <a href="#" class="position-relative mb-3 py-3 px-3 text-white text-decoration-none border-bottom border-white border-opacity-25 d-flex align-items-center gap-2">
             <img src="../assets/images/logo.webp" height="32" width="32" alt="Logo" class="flex-shrink-0">
-            <span class="fs-6  sidebar-text">GestorFPQRS</span>
+            <span class="fs-6 sidebar-text fw-bold">GestorFPQRS</span>
             <button id="sidebar-toggle" class="position-absolute top-50 end-0 translate-middle z-3 d-flex align-items-center justify-content-center bg-white border rounded-circle shadow-sm xxs-small" aria-label="Colapsar menú">
                 <i id="sidebar-toggle-icon" class="bi bi-chevron-left"></i>
             </button>
@@ -97,9 +100,9 @@
                 <span class="sidebar-text">Notificaciones</span>
             </a>
             <div class="d-flex align-items-center px-2">
-                <div class="bg-secondary rounded-circle me-2 d-flex align-items-center justify-content-center text-white  flex-shrink-0" style="width:28px;height:28px;font-size:.7rem;">SM</div>
+                <div class="bg-secondary rounded-circle me-2 d-flex align-items-center justify-content-center text-white flex-shrink-0" style="width:28px;height:28px;font-size:.7rem;">SM</div>
                 <div class="d-flex flex-column lh-1 sidebar-text">
-                    <span class="text-white small">Sofía Martínez</span>
+                    <span class="text-white xs-small">Sofía Martínez</span>
                     <small class="text-white-50">Administrador</small>
                 </div>
             </div>
@@ -112,36 +115,34 @@
     </div>
 
     <main class="flex-fill overflow-y-auto">
-        <div class="px-4 py-4 px-lg-5" >
+        <div class="px-4 py-4 px-lg-5">
 
-            <div class="d-flex align-items-start justify-content-between mb-5 gap-3 flex-wrap">
+            <div class="d-flex align-items-start justify-content-between mb-4 gap-3 flex-wrap">
                 <div>
                     <div class="d-flex align-items-center gap-1 mb-3 xs-small text-secondary">
                         <a href="dashboard.html" class="text-secondary text-decoration-none d-flex align-items-center gap-1">
                             <i class="bi bi-chevron-left xxs-small"></i>Bandeja de Casos
                         </a>
                         <span>/</span>
-                        <span class="text-gray-9 ">FPQRS-2026-04779</span>
+                        <span class="text-gray-9">FPQRS-2026-04779</span>
                     </div>
-                    <div class="d-flex align-items-center gap-3 flex-wrap mb-2" style="line-height:1;">
-                        <h1 class=" mb-0 fs-4">FPQRS-2026-04779</h1>
+                    <div class="d-flex align-items-center gap-2 flex-wrap mb-2">
+                        <h1 class="m-0 fs-4 d-inline-flex align-items-center">FPQRS-2026-04779</h1>
                         <span class="badge-soft" style="background:#fefce8; color:var(--bs-orange);">Pendiente de Información</span>
-                    </div>
-                    <div class="d-flex align-items-center gap-2 mb-2">
                         <span class="badge-soft" style="background:rgba(var(--bs-orange-rgb),.07); color:#a16207;">Queja</span>
                         <span class="badge-sla badge-sla-danger"><span class="sla-dot bg-danger"></span>Vencido</span>
                     </div>
                     <p class="xs-small text-secondary mb-0">Radicado el 04/05/2026 18:00 · Canal: App Móvil</p>
                 </div>
-                <button class="btn btn-sm d-flex align-items-center gap-2  rounded-3 px-3 py-2 bg-white border" style="color:#1e3a5f; border-color:rgba(30,58,95,.3);">
+                <button class="btn btn-sm d-flex align-items-center gap-2 rounded-3 px-3 py-1 bg-white border" style="color:#1e3a5f; border-color:rgba(30,58,95,.3);">
                     <i class="bi bi-person-check"></i> Reasignar
                 </button>
             </div>
 
-            <div class="alert d-flex align-items-start gap-3 rounded-3 mb-4 py-3" role="alert">
+            <div class="alert alert-sla-danger bg-danger-subtle border-danger d-flex align-items-start gap-3 rounded-3 mb-4 py-3" role="alert">
                 <i class="bi bi-exclamation-triangle-fill text-danger mt-1 flex-shrink-0"></i>
                 <div>
-                    <p class="mb-0  text-danger x-small">SLA vencido — Atención urgente requerida</p>
+                    <p class="mb-0 text-danger x-small">SLA vencido — Atención urgente requerida</p>
                     <p class="mb-0 text-danger mt-1 xs-small">La fecha límite de respuesta fue 05/05/2026 03:00. Este caso requiere acción inmediata.</p>
                 </div>
             </div>
@@ -150,16 +151,16 @@
 
                 <div class="col-12 col-xl-8 d-flex flex-column gap-4">
 
-                    <div class="card border rounded-3 shadow-sm bg-white">
+                    <div class="card border rounded-4 shadow-sm bg-white">
                         <div class="card-header bg-white d-flex align-items-center gap-2 py-3">
                             <i class="bi bi-person text-primary"></i>
-                            <span class=" x-small">Datos del Asociado</span>
+                            <span class="x-small">Datos del Asociado</span>
                         </div>
                         <div class="card-body">
                             <div class="row g-3">
                                 <div class="col-6 col-md-4">
                                     <p class="detail-label">Nombre</p>
-                                    <p class="detail-value ">Jorge Luis Patiño Restrepo</p>
+                                    <p class="detail-value">Jorge Luis Patiño Restrepo</p>
                                 </div>
                                 <div class="col-6 col-md-4">
                                     <p class="detail-label">Identificación</p>
@@ -181,10 +182,10 @@
                         </div>
                     </div>
 
-                    <div class="card border rounded-3 shadow-sm bg-white">
+                    <div class="card border rounded-4 shadow-sm bg-white">
                         <div class="card-header bg-white d-flex align-items-center gap-2 py-3">
                             <i class="bi bi-briefcase text-primary"></i>
-                            <span class=" x-small">Datos del Caso</span>
+                            <span class="x-small">Datos del Caso</span>
                         </div>
                         <div class="card-body">
                             <div class="row g-3">
@@ -211,11 +212,11 @@
                                 </div>
                                 <div class="col-6 col-md-4">
                                     <p class="detail-label">SLA aplicado</p>
-                                    <p class="detail-value ">4h</p>
+                                    <p class="detail-value">4h</p>
                                 </div>
                                 <div class="col-6 col-md-4">
                                     <p class="detail-label">Fecha límite SLA</p>
-                                    <p class="detail-value  text-danger">05/05/2026 03:00</p>
+                                    <p class="detail-value text-danger">05/05/2026 03:00</p>
                                 </div>
                                 <div class="col-6 col-md-4">
                                     <p class="detail-label">Tipo de causa</p>
@@ -225,7 +226,7 @@
                         </div>
                     </div>
 
-                    <div class="card border rounded-3 shadow-sm bg-white">
+                    <div class="card border rounded-4 shadow-sm bg-white">
                         <div class="card-header bg-white p-0">
                             <ul class="nav nav-tabs border-0 px-2 pt-1" id="tabsCaso" role="tablist">
                                 <li class="nav-item" role="presentation">
@@ -298,11 +299,11 @@
                                 </div>
                                 <div class="d-flex align-items-center justify-content-between">
                                     <span class="xs-small text-secondary">Responsable</span>
-                                    <span class="xs-small  text-end">Rodrigo Esteban Muñoz</span>
+                                    <span class="xs-small text-end">Rodrigo Esteban Muñoz</span>
                                 </div>
                                 <div class="d-flex align-items-center justify-content-between">
                                     <span class="xs-small text-secondary">SLA</span>
-                                    <span class="xs-small ">4h</span>
+                                    <span class="xs-small">4h</span>
                                 </div>
                             </div>
                         </div>
@@ -310,7 +311,7 @@
 
                     <div class="card border rounded-3 shadow-sm bg-white">
                         <div class="card-body p-4">
-                            <p class=" x-small mb-3 d-flex align-items-center gap-2">
+                            <p class="x-small mb-3 d-flex align-items-center gap-2">
                                 <i class="bi bi-gear text-primary"></i> Cambiar estado
                             </p>
                             <select class="form-select form-select-sm rounded-3">
@@ -325,7 +326,7 @@
 
                     <div class="card border rounded-3 shadow-sm bg-white">
                         <div class="card-body p-4">
-                            <p class=" x-small mb-1 d-flex align-items-center gap-2">
+                            <p class="x-small mb-1 d-flex align-items-center gap-2">
                                 <i class="bi bi-exclamation-triangle text-warning"></i> Cambiar prioridad
                             </p>
                             <p class="xs-small text-secondary mb-3">Solo se muestran las prioridades permitidas para esta categoría. El SLA se recalculará automáticamente.</p>
@@ -340,11 +341,11 @@
 
                     <div class="card border rounded-3 shadow-sm bg-white">
                         <div class="card-body p-4">
-                            <p class=" x-small mb-1 d-flex align-items-center gap-2">
+                            <p class="x-small mb-1 d-flex align-items-center gap-2">
                                 <i class="bi bi-person-check text-primary"></i> Reasignar caso
                             </p>
                             <p class="xs-small text-secondary mb-3">Transfiera este caso a otro operador. El cambio quedará registrado en la trazabilidad.</p>
-                            <button class="btn btn-sm w-100 d-flex align-items-center justify-content-between  rounded-3 bg-white" style="border:1px solid rgba(30,58,95,.3); color:#1e3a5f;">
+                            <button class="btn btn-sm w-100 d-flex align-items-center justify-content-between rounded-3 bg-white border" style="color:#1e3a5f; border-color:rgba(30,58,95,.3);">
                                 <span>Responsable: Rodrigo Esteban</span>
                                 <i class="bi bi-person-check"></i>
                             </button>
@@ -353,7 +354,7 @@
 
                     <div class="card border rounded-3 shadow-sm bg-white">
                         <div class="card-body p-4">
-                            <p class=" x-small mb-3 d-flex align-items-center gap-2">
+                            <p class="x-small mb-3 d-flex align-items-center gap-2">
                                 <i class="bi bi-chat-square text-primary"></i> Registrar observación
                             </p>
                             <textarea rows="3" class="form-control form-control-sm rounded-3 mb-2" placeholder="Escriba su observación interna o respuesta al asociado..."></textarea>
