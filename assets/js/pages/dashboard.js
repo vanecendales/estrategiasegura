@@ -1,40 +1,45 @@
 const BADGE_TIPO = {
-  'Felicitación': 'badge badge-soft badge-soft-success',
-  'Sugerencia':   'badge badge-soft badge-soft-purple',
-  'Reclamo':      'badge badge-soft badge-soft-danger',
-  'Queja':        'badge badge-soft badge-soft-warning',
-  'Petición':     'badge badge-soft badge-soft-primary'
+  'Felicitación': 'badge-soft priority-baja',
+  'Sugerencia':   'badge-soft status-asignado',
+  'Reclamo':      'badge-soft priority-critica',
+  'Queja':        'badge-soft priority-alta',
+  'Petición':     'badge-soft status-radicado'
 };
 
 const BADGE_PRIORIDAD = {
-  'Alta':   'badge badge-soft badge-soft-danger',
-  'Normal': 'badge badge-soft badge-soft-warning',
-  'Baja':   'badge badge-soft badge-soft-secondary'
+  'Alta':   'badge-soft priority-critica',
+  'Normal': 'badge-soft priority-alta',
+  'Baja':   'badge-soft priority-baja'
 };
 
 const BADGE_ESTADO = {
-  'Radicado':   'badge badge-soft badge-soft-info',
-  'En Gestión': 'badge badge-soft badge-soft-primary',
-  'Escalado':   'badge badge-soft badge-soft-danger',
-  'Cerrado':    'badge badge-soft badge-soft-secondary'
+  'Radicado':      'badge-soft status-radicado',
+  'En Gestión':    'badge-soft status-engestion',
+  'Pendiente':     'badge-soft status-pendiente',
+  'Respondido':    'badge-soft status-respondido',
+  'Cerrado':       'badge-soft status-cerrado',
+  'Reabierto':     'badge-soft status-reabierto',
+  'Anulado':       'badge-soft status-anulado',
+  'Asignado':      'badge-soft status-asignado',
+  'Escalado':      'badge-soft status-reabierto' // si no existe status-escalado
 };
 
 const SEMAFORO = {
   'En tiempo': {
-    cls: 'badge-sla badge-sla-success',
-    dot: 'var(--bs-success)'
+    cls: 'badge-sla sla-verde',
+    dot: 'var(--sla-verde)'
   },
   'Próximo a vencer': {
-    cls: 'badge-sla badge-sla-warning',
-    dot: 'var(--bs-orange)'
+    cls: 'badge-sla sla-amarillo',
+    dot: 'var(--sla-amarillo)'
   },
   'Vencido': {
-    cls: 'badge-sla badge-sla-danger',
-    dot: 'var(--bs-danger)'
+    cls: 'badge-sla sla-rojo',
+    dot: 'var(--sla-rojo)'
   },
   'Cerrado': {
-    cls: 'badge-sla badge-sla-secondary',
-    dot: 'var(--bs-secondary)'
+    cls: 'badge-sla sla-gris',
+    dot: 'var(--sla-gris)'
   }
 };
 
@@ -69,7 +74,7 @@ function renderTabla() {
     return `<tr ${alt}>
       <td class="px-3 py-3 xs-small text-gray-7">${c.id}</td>
       <td class="px-3 py-3 xs-small text-gray-5">${c.fecha}</td>
-      <td class="px-3 py-3 xs-small "><span class="${BADGE_TIPO[c.tipo] || 'badge text-bg-secondary'}">${c.tipo}</span></td>
+      <td class="px-3 py-3 xxs-small "><span class="${BADGE_TIPO[c.tipo] || 'badge text-bg-secondary'}">${c.tipo}</span></td>
       <td class="px-3 py-3 xs-small text-gray-7">${c.servicio}</td>
       <td class="px-3 py-3 xs-small text-wrap text-gray-7">${c.categoria}</td>
       <td class="px-3 py-3 xs-small text-gray-5" ><span class="cell-truncate" title="${c.subcategoria}">${c.subcategoria}</span></td>

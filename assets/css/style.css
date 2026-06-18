@@ -17,13 +17,12 @@
     --bs-body-font-size-xs: 0.75rem;
     --bs-body-font-size-xxs: 0.65rem;
     --sidebar-w: 240px;
-
+    --bs-text-base:14px;
 
     --accent: #2e7d32;
-    --accent-foreground: #fff;
     --muted: #edf0f4;
     --input: #e8eef5;
-    --ring: #1e3a5f;
+
 
 --status-radicado: #1565C0;
   --status-radicado-bg: #E3F2FD;
@@ -65,7 +64,7 @@ body {
     min-height: 100vh;
     background-color: var(--bs-body-bg);
     font-family: var(--bs-body-font-family);
-    font-size: 14px;
+    font-size: var(--bs-text-base);
     color: var(--bs-body-color);
 }
 
@@ -73,13 +72,6 @@ a {
     color: var(--bs-primary);
 }
 
-.btn-primary {
-    background: var(--bs-primary);
-    border: none;
-    color: var(--bs-light);
-    font-size: var(--bs-body-font-size-m);
-    line-height: 1.8rem;
-}
 
 img,
 video {
@@ -96,6 +88,13 @@ small,
 form a,
 label.form-check-label {
     font-size: var(--bs-body-font-size-m);
+}
+.p-5 {
+    padding: 2.5rem!important;
+}
+
+.mb-6 {
+    margin-bottom: 4rem!important;
 }
 
 .x-small {
@@ -134,7 +133,6 @@ label.form-check-label {
     border-color: rgb(226 232 240 / 1);
 }
 
-
 .text-orange{
     --tw-text-opacity: 1;
     color: rgb(194 65 12 / 1);
@@ -153,6 +151,13 @@ input.form-control,
     background: white;
     line-height: 1.65rem;
 }
+.btn-primary {
+    background: var(--bs-primary);
+    border: none;
+    color: var(--bs-light);
+    font-size: var(--bs-body-font-size-m);
+    line-height: 1.8rem;
+}
 
 #tabla-body td {
     max-width: 180px;
@@ -160,13 +165,6 @@ input.form-control,
     white-space: nowrap;
     overflow: hidden;
     color: var(--bs-primary);
-}
-.p-5 {
-    padding: 2.5rem!important;
-}
-
-.mb-6 {
-    margin-bottom: 4rem!important;
 }
 
 .logo span {
@@ -326,7 +324,7 @@ button#sidebar-toggle {
 
 #sidebar.collapsed {
     min-width: 0 !important;
-    width: 110px !important;
+    width: 80px !important;
 }
 
 #sidebar.collapsed .sidebar-text {
@@ -342,7 +340,6 @@ button#sidebar-toggle {
 }
 
 
-/* ── badgets ─────────────────────────────────────────────── */
 /* ==========================================================
    BADGES
    ========================================================== */
@@ -351,15 +348,70 @@ button#sidebar-toggle {
 .badge-sla {
     border: 0;
     border-radius: 999px;
-    font-size: .75rem;
+    font-size: var(--bs-body-font-size-xxs);
     font-weight: 500;
     line-height: 1.2;
-    padding: .4rem .75rem;
+    padding: .2rem .75rem;
     white-space: nowrap;
 }
 
-/* ---------- Tipo ---------- */
-.sla-verde {
+/* ── Stat cards ──────────────────────────────────────────── */
+.stat-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: .75rem;
+    padding: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .05);
+    transition: box-shadow .2s, transform .2s;
+}
+
+.stat-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .09);
+    transform: translateY(-1px);
+}
+
+.stat-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+.text-primary {
+    color: var(--bs-primary) !important;
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: .125rem;
+    font-variant-numeric: tabular-nums;
+}
+
+.nav-item i.bi {
+    font-size: 1.1rem;
+}
+
+.page-btn:hover:not(:disabled) {
+    border-color: rgba(30, 58, 95, .4);
+    color: var(--bs-primary);
+}
+
+.page-btn.active {
+    background: var(--bs-primary);
+    border-color: var(--bs-primary);
+    color: white;
+}
+
+.page-btn:disabled {
+    opacity: .4;
+    cursor: not-allowed;
+}
+
+  .sla-verde {
     color: var(--sla-verde);
     background-color: var(--sla-verde-bg);
   }
@@ -438,88 +490,3 @@ button#sidebar-toggle {
     color: var(--priority-critica);
     background-color: var(--priority-critica-bg);
   }
-
-.sla-dot {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    display: inline-block;
-    flex-shrink: 0;
-}
-
-/* ── Stat cards ──────────────────────────────────────────── */
-.stat-card {
-    background: white;
-    border: 1px solid #e2e8f0;
-    border-radius: .75rem;
-    padding: 1rem;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, .05);
-    transition: box-shadow .2s, transform .2s;
-}
-
-.stat-card:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, .09);
-    transform: translateY(-1px);
-}
-
-.stat-icon {
-    width: 36px;
-    height: 36px;
-    border-radius: .5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.1rem;
-}
-
-.text-primary {
-    color: var(--bs-primary) !important;
-}
-
-.stat-value {
-    font-size: 1.5rem;
-    line-height: 1.2;
-    margin-bottom: .125rem;
-    font-variant-numeric: tabular-nums;
-}
-
-.nav-item i.bi {
-    font-size: 1.1rem;
-}
-
-.dot-pulse {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    display: block;
-    animation: pulse 1.4s ease-in-out infinite;
-}
-
-@keyframes pulse {
-
-    0%,
-    100% {
-        opacity: 1
-    }
-
-    50% {
-        opacity: .3
-    }
-}
-
-
-.page-btn:hover:not(:disabled) {
-    border-color: rgba(30, 58, 95, .4);
-    color: var(--bs-primary);
-}
-
-.page-btn.active {
-    background: var(--bs-primary);
-    border-color: var(--bs-primary);
-    color: white;
-}
-
-.page-btn:disabled {
-    opacity: .4;
-    cursor: not-allowed;
-}
