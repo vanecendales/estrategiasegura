@@ -72,19 +72,19 @@ function renderTabla() {
       ? 'fw-semibold text-warning' : 'x-small';
 
     return `<tr ${alt}>
-      <td class="px-3 py-3 xs-small text-gray-7">${c.id}</td>
-      <td class="px-3 py-3 xs-small text-gray-5">${c.fecha}</td>
-      <td class="px-3 py-3 xxs-small "><span class="${BADGE_TIPO[c.tipo] || 'badge text-bg-secondary'}">${c.tipo}</span></td>
-      <td class="px-3 py-3 xs-small text-gray-7">${c.servicio}</td>
-      <td class="px-3 py-3 xs-small text-wrap text-gray-7">${c.categoria}</td>
-      <td class="px-3 py-3 xs-small text-gray-5" ><span class="cell-truncate" title="${c.subcategoria}">${c.subcategoria}</span></td>
-      <td class="px-3 py-3 xs-small text-gray-7" title="${c.asociado}">${c.asociado}</td>
-      <td class="px-3 py-3 xs-small text-gray-5" title="${c.responsable}">${c.responsable}</td>
-      <td class="px-3 py-3 xs-small text-gray-5"><span class="${BADGE_PRIORIDAD[c.prioridad] || 'badge text-bg-secondary'}">${c.prioridad}</span></td>
-      <td class="px-3 py-3 xs-small text-gray-5 text-wrap"><span class="${BADGE_ESTADO[c.estado] || 'badge text-bg-secondary'}">${c.estado}</span></td>
-      <td class="px-3 py-3 xs-small text-gray-5 ${slaFecha}">${c.limiteSla}</td>
-      <td class="px-3 py-3 xs-small text-gray-5"><span class="${sla.cls}"><span class="sla-dot" style="background:${sla.dot};"></span>${valorSemaforo}</span></td>
-      <td class="px-3 py-3 xs-small text-gray-5 text-end"><a href="case-detail.html" class="btn-action" title="Ver detalle"><i class="bi bi-eye"></i></a></td>
+      <td class="px-3 py-3 xs-text text-gray-7">${c.id}</td>
+      <td class="px-3 py-3 xs-text text-gray-5">${c.fecha}</td>
+      <td class="px-3 py-3 xxs-text "><span class="${BADGE_TIPO[c.tipo] || 'badge text-bg-secondary'}">${c.tipo}</span></td>
+      <td class="px-3 py-3 xs-text text-gray-7">${c.servicio}</td>
+      <td class="px-3 py-3 xs-text text-wrap text-gray-7">${c.categoria}</td>
+      <td class="px-3 py-3 xs-text text-gray-5" ><span class="cell-truncate" title="${c.subcategoria}">${c.subcategoria}</span></td>
+      <td class="px-3 py-3 xs-text text-gray-7" title="${c.asociado}">${c.asociado}</td>
+      <td class="px-3 py-3 xs-text text-gray-5" title="${c.responsable}">${c.responsable}</td>
+      <td class="px-3 py-3 xs-text text-gray-5"><span class="${BADGE_PRIORIDAD[c.prioridad] || 'badge text-bg-secondary'}">${c.prioridad}</span></td>
+      <td class="px-3 py-3 xs-text text-gray-5 text-wrap"><span class="${BADGE_ESTADO[c.estado] || 'badge text-bg-secondary'}">${c.estado}</span></td>
+      <td class="px-3 py-3 xs-text text-gray-5 ${slaFecha}">${c.limiteSla}</td>
+      <td class="px-3 py-3 xs-text text-gray-5"><span class="${sla.cls}"><span class="sla-dot" style="background:${sla.dot};"></span>${valorSemaforo}</span></td>
+      <td class="px-3 py-3 xs-text text-gray-5 text-end"><a href="case-detail.html" class="btn-action" title="Ver detalle"><i class="bi bi-eye"></i></a></td>
     </tr>`;
 
   }).join('');
@@ -101,11 +101,11 @@ function renderPaginacion() {
   let hasta  = Math.min(total, desde + 4);
   if (hasta - desde < 4) desde = Math.max(1, hasta - 4);
 
-  let html = `<button class="page-btn xs-small" id="btn-prev" ${paginaActual === 1 ? 'disabled' : ''}><i class="bi bi-chevron-left"></i></button>`;
+  let html = `<button class="page-btn xs-text" id="btn-prev" ${paginaActual === 1 ? 'disabled' : ''}><i class="bi bi-chevron-left"></i></button>`;
   for (let p = desde; p <= hasta; p++) {
-    html += `<button class="page-btn xs-small ${p === paginaActual ? 'active' : ''}" data-page="${p}">${p}</button>`;
+    html += `<button class="page-btn xs-text ${p === paginaActual ? 'active' : ''}" data-page="${p}">${p}</button>`;
   }
-  html += `<button class="page-btn xs-small" id="btn-next" ${paginaActual === total || total === 0 ? 'disabled' : ''}><i class="bi bi-chevron-right"></i></button>`;
+  html += `<button class="page-btn xs-text" id="btn-next" ${paginaActual === total || total === 0 ? 'disabled' : ''}><i class="bi bi-chevron-right"></i></button>`;
 
   wrapper.innerHTML = html;
 

@@ -20,126 +20,113 @@
 
         <div id="sidebar"
             class="d-flex z-3 position-relative justify-content-between text-nowrap flex-column p-0 text-white sidebar min-vh-100 position-relative"
-            style="width: 260px; transition: width .2s ease;">
+            >
 
             <a href="#"
-                class="position-relative mb-2 py-4 px-3 text-white text-decoration-none border-bottom border-white border-opacity-25 d-flex align-items-center gap-2">
+                class="position-relative mb-2 py-12 px-3 text-white text-decoration-none border-bottom border-white border-opacity-10 d-flex align-items-center gap-2">
                 <img src="../assets/images/logo.webp" height="32" width="32" alt="Logo" class="flex-shrink-0">
                 <span class="fs-6 fw-bold sidebar-text">GestorFPQRS</span>
                 <button id="sidebar-toggle"
-                    class="position-absolute top-50 end-0 translate-middle z-3 d-flex align-items-center justify-content-center bg-white border rounded-circle shadow-sm xxs-small"
+                    class="position-absolute top-50 end-0 translate-middle z-3 d-flex align-items-center justify-content-center bg-white border rounded-circle shadow-sm xxs-text"
                     aria-label="Colapsar menú">
-                    <i id="sidebar-toggle-icon" class="bi bi-chevron-left" ></i>
+                    <i id="sidebar-toggle-icon" class="bi bi-chevron-left"></i>
                 </button>
             </a>
 
             <div class=" mb-2 px-2">
-                        <div class="text-uppercase text-white-50 xxs-small px-2 mb-2 opacity-50 sidebar-text">
-                            Operación
-                        </div>
-                        <ul class="nav nav-pills flex-column mb-auto gap-0">
-                            <li class="nav-item">
-                                <a href="Dashboard.html"
-                                    class="nav-link active bg-white bg-opacity-10 text-white d-flex align-items-center justify-content-between rounded-3 pb-2 px-3 mb-1"
-                                    aria-current="page">
-                                    <span class="d-flex align-items-center gap-2 small">
-                                       <i class="bi bi-folder2-open"></i>
-                                        <span class="sidebar-text">Bandeja de Casos</span>
-                                    </span>
-                                    <span class="badge bg-danger rounded-pill px-2 py-2 sidebar-text">5</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="case-detail.html"
-                                    class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 pb-2 px-3 mb-1 small">
-                                    <i class="bi bi-file-earmark-text flex-shrink-0"></i>
-                                    <span class="sidebar-text">Detalle de Caso</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="fpqr.html"
-                                    class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 pb-2 px-3 mb-1 small">
-                                    <i class="bi bi-list-check"></i>
-                                    <span class="sidebar-text">Registrar FPQRS</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 pb-2 px-3 mb-1 small">
-                                 <i class="bi bi-plus-square"></i>
-                                    <span class="sidebar-text">Crear Caso (Operador)</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 pb-2 px-3 mb-1 small">
-                                    <i class="bi bi-bar-chart"></i>
-                                    <span class="sidebar-text">Métricas</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 pb-2 px-3 mb-1 small">
-                                   <i class="bi bi-graph-up-arrow"></i>
-                                    <span class="sidebar-text">Analítica</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 pb-2 px-3 mb-1 small">
-                                    <i class="bi bi-download"></i>
-                                    <span class="sidebar-text">Exportar Casos</span>
-                                </a>
-                            </li>
-                        </ul>
+                <div class="text-uppercase text-white-50 xxs-text px-2 pb-2 pt-2 tracking-1 opacity-50 sidebar-text">
+                    Operación
+                </div>
+                <ul class="nav nav-pills flex-column mb-auto gap-0">
+                    <li class="nav-item">
+                        <a href="Dashboard.html"
+                            class="nav-link active bg-white bg-opacity-10 text-white d-flex align-items-center justify-content-between rounded-3 pb-2 px-3 mb-1"
+                            aria-current="page">
+                            <span class="d-flex align-items-center gap-2 text">
+                                <i class="bi bi-folder2-open"></i>
+                                <span class="sidebar-text">Bandeja de Casos</span>
+                            </span>
+                            <span class="badge bg-danger rounded-pill px-2 py-2 xxs-text">5</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="case-detail.html"
+                            class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 pb-2 px-3 text">
+                            <i class="bi bi-file-earmark-text flex-shrink-0"></i>
+                            <span class="sidebar-text">Detalle de Caso</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="fpqr.html"
+                            class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 pb-2 px-3 text">
+                            <i class="bi bi-list-check"></i>
+                            <span class="sidebar-text">Registrar FPQRS</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 pb-2 px-3 text">
+                            <i class="bi bi-plus-square"></i>
+                            <span class="sidebar-text">Crear Caso (Operador)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 pb-2 px-3 text">
+                            <i class="bi bi-bar-chart"></i>
+                            <span class="sidebar-text">Métricas</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 pb-2 px-3 text">
+                            <i class="bi bi-graph-up-arrow"></i>
+                            <span class="sidebar-text">Analítica</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 pb-2 px-3 text">
+                            <i class="bi bi-download"></i>
+                            <span class="sidebar-text">Exportar Casos</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
 
-<div class="mb-2 px-2">
-            <div class="text-uppercase text-white-50 xxs-small px-2 mb-0 opacity-50 sidebar-text">Administración</div>
-            <ul class="nav nav-pills flex-column gap-1">
-                <li>
-                    <a href="#" class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 pb-2 px-3 mb-1 small">
-                        <i class="bi bi-shield-check flex-shrink-0"></i>
-                        <span class="sidebar-text">Auditoría</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 pb-2 px-3 mb-1 small">
-                        <i class="bi bi-gear flex-shrink-0"></i>
-                        <span class="sidebar-text">Parametrización</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 pb-2 px-3 mb-1 small">
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flask" viewBox="0 0 16 16">
-  <path d="M4.5 0a.5.5 0 0 0 0 1H5v5.36L.503 13.717A1.5 1.5 0 0 0 1.783 16h12.434a1.5 1.5 0 0 0 1.28-2.282L11 6.359V1h.5a.5.5 0 0 0 0-1zM10 2H9a.5.5 0 0 0 0 1h1v1H9a.5.5 0 0 0 0 1h1v1H9a.5.5 0 0 0 0 1h1.22l.61 1H10a.5.5 0 1 0 0 1h1.442l.611 1H11a.5.5 0 1 0 0 1h1.664l.611 1H12a.5.5 0 1 0 0 1h1.886l.758 1.24a.5.5 0 0 1-.427.76H1.783a.5.5 0 0 1-.427-.76l4.57-7.48A.5.5 0 0 0 6 6.5V1h4z"/>
-</svg>                        <span class="sidebar-text">Parametros Alt</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 pb-2 px-3 mb-1 small">
-                        <i class="bi bi-book flex-shrink-0"></i>
-                        <span class="sidebar-text">Nodelo Cat. Resp.</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
+            <div class="mb-2 px-2">
+                <div class="text-uppercase text-white-50 xxs-text px-2 pb-2 pt-1 tracking-1 opacity-50 sidebar-text">Administración
+                </div>
+                <ul class="nav nav-pills flex-column gap-1">
+                    <li>
+                        <a href="#"
+                            class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 pb-2 px-3 text">
+                            <i class="bi bi-shield-check flex-shrink-0"></i>
+                            <span class="sidebar-text">Auditoría</span>
+                        </a>
+                    </li>
+                   
+                </ul>
+            </div>
 
             <hr class="text-white opacity-25">
 
             <div class="d-flex flex-column gap-1 mb-2 px-3">
-                <a href="#" class="small nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 mb-2 px-2 small">
+                <a href="#"
+                    class="text nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 mb-2 px-2 text">
                     <i class="bi bi-bell flex-shrink-0"></i>
                     <span class="sidebar-text">Notificaciones</span>
                 </a>
                 <div class="d-flex align-items-center px-2">
-                    <div class="bg-secondary rounded-circle me-2 d-flex align-items-center justify-content-center flex-shrink-0" style="width:28px;height:28px;"><i class="bi bi-person"></i></div>
+                    <div class="bg-secondary rounded-circle me-2 d-flex align-items-center justify-content-center flex-shrink-0"
+                        style="width:28px;height:28px;"><i class="bi bi-person"></i></div>
                     <div class="d-flex flex-column lh-1 sidebar-text">
-                        <span class="text-white small">Sofía Martínez</span>
+                        <span class="text-white text">Sofía Martínez</span>
                         <small class="text-white-50 opacity-5">Administrador</small>
                     </div>
                 </div>
-                <a href="#" class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 py-2 px-2 small mb-1">
+                <a href="#"
+                    class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 py-2 px-2 text mb-1">
                     <i class="bi bi-box-arrow-left flex-shrink-0"></i>
                     <span class="sidebar-text">Cerrar sesión</span>
                 </a>
@@ -147,156 +134,160 @@
 
         </div>
 
-    <main class="flex-fill overflow-y-auto z-1">
-        <div class="px-4 py-4 px-lg-4">
-            <div class="d-flex align-items-start justify-content-between mb-4 gap-3">
-                <div>
-                    <h1 class="mb-3 fs-4 fw-normal">Bandeja de Casos</h1>
-                    <p class="small mb-0 text-gray-5">Gestión de casos FPQRS — Actualizado: 07/05/2026 00:18</p>
-                </div>
-                <div class="d-flex gap-2">
-                    <button
-                        class="btn bg-white rounded-4 px-3 py-2 border-secondary-subtle btn-sm d-flex align-items-center gap-2">
-                        <i class="bi bi-download"></i> Exportar
-                    </button>
-                    <button
-                        class="btn bg-white rounded-4 px-3 py-2 border-secondary-subtle btn-sm d-flex align-items-center gap-2">
-                        <i class="bi bi-arrow-clockwise"></i> Actualizar
-                    </button>
-                </div>
-            </div>
-
-            <div class="row g-3 mb-4 align-items-stretch">
-
-                <div class="col-6 col-lg-3">
-                    <div class="stat-card">
-                        <div class="stat-icon bg-opacity-10 text-primary mb-3">
-                            <i class="bi bi-folder2"></i>
-                        </div>
-                        <p class="stat-value text-primary">125</p>
-                        <p class="xs-small mb-0">Casos activos</p>
-                        <p class="xxs-small text-gray-5 mb-0">En proceso de gestión</p>
+        <main class="flex-fill overflow-y-auto z-1">
+            <div class="px-4 py-4 px-lg-4">
+                <div class="d-flex align-items-start justify-content-between mb-4 gap-3">
+                    <div>
+                        <h1 class="mb-3 fs-4 fw-normal">Bandeja de Casos</h1>
+                        <p class="text mb-0 text-gray-5">Gestión de casos FPQRS — Actualizado: 07/05/2026 00:18</p>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <button
+                            class="btn bg-white rounded-4 px-3 py-2 border-secondary-subtle btn-sm d-flex align-items-center gap-2">
+                            <i class="bi bi-download"></i> Exportar
+                        </button>
+                        <button
+                            class="btn bg-white rounded-4 px-3 py-2 border-secondary-subtle btn-sm d-flex align-items-center gap-2">
+                            <i class="bi bi-arrow-clockwise"></i> Actualizar
+                        </button>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3">
-                    <div class="stat-card border-danger border-opacity-25 ring-danger">
-                        <div class="d-flex justify-content-between align-items-start mb-3">
-                            <div class="stat-icon bg-danger bg-opacity-10 text-danger">
-                                <i class="bi bi-exclamation-triangle"></i>
+                <div class="row g-3 mb-4 align-items-stretch">
+
+                    <div class="col-6 col-lg-3">
+                        <div class="stat-card">
+                            <div class="stat-icon bg-opacity-10 text-primary mb-3">
+                                <i class="bi bi-folder2"></i>
                             </div>
-                            <span class="dot-pulse bg-danger"></span>
+                            <p class="stat-value text-primary">125</p>
+                            <p class="xs-text mb-0">Casos activos</p>
+                            <p class="xxs-text text-gray-5 mb-0">En proceso de gestión</p>
                         </div>
-                        <p class="stat-value text-danger">111</p>
-                        <p class="xs-small mb-0">SLA vencido</p>
-                        <p class="xxs-small text-gray-5 mb-0">Requieren atención urgente</p>
                     </div>
+
+                    <div class="col-6 col-lg-3">
+                        <div class="stat-card border-danger border-opacity-25 ring-danger">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div class="stat-icon bg-danger bg-opacity-10 text-danger">
+                                    <i class="bi bi-exclamation-triangle"></i>
+                                </div>
+                                <span class="dot-pulse bg-danger"></span>
+                            </div>
+                            <p class="stat-value text-danger">111</p>
+                            <p class="xs-text mb-0">SLA vencido</p>
+                            <p class="xxs-text text-gray-5 mb-0">Requieren atención urgente</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-3">
+                        <div class="stat-card border-warning border-opacity-25">
+                            <div class="stat-icon bg-warning bg-opacity-10 text-warning mb-3">
+                                <i class="bi bi-clock"></i>
+                            </div>
+                            <p class="stat-value text-warning">2</p>
+                            <p class="xs-text mb-0">Próximos a vencer</p>
+                            <p class="xxs-text text-gray-5 mb-0">Vencen en las próximas 24 horas</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-3">
+                        <div class="stat-card border-success border-opacity-25">
+                            <div class="stat-icon bg-success bg-opacity-10 text-success mb-3">
+                                <i class="bi bi-check-circle"></i>
+                            </div>
+                            <p class="stat-value text-success">1</p>
+                            <p class="xs-text mb-0">Cerrados hoy</p>
+                            <p class="xxs-text text-gray-5 mb-0">Resueltos en el día</p>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="col-6 col-lg-3">
-                    <div class="stat-card border-warning border-opacity-25">
-                        <div class="stat-icon bg-warning bg-opacity-10 text-warning mb-3">
-                            <i class="bi bi-clock"></i>
-                        </div>
-                        <p class="stat-value text-warning">2</p>
-                        <p class="xs-small mb-0">Próximos a vencer</p>
-                        <p class="xxs-small text-gray-5 mb-0">Vencen en las próximas 24 horas</p>
-                    </div>
-                </div>
+                <div class="card rounded-4 shadow-sm bg-white overflow-hidden">
 
-                <div class="col-6 col-lg-3">
-                    <div class="stat-card border-success border-opacity-25">
-                        <div class="stat-icon bg-success bg-opacity-10 text-success mb-3">
-                            <i class="bi bi-check-circle"></i>
+                    <div class="d-flex gap-2 align-items-center w-100 p-2 border-bottom">
+                        <div class="position-relative flex-grow-1">
+                            <i
+                                class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3 xs-text"></i>
+                            <input id="input-busqueda" type="text"
+                                class="form-control rounded-4 bg-light border border-light-subtle py-1 ps-5 text"
+                                placeholder="Buscar por radicado o nombre del asociado...">
                         </div>
-                        <p class="stat-value text-success">1</p>
-                        <p class="xs-small mb-0">Cerrados hoy</p>
-                        <p class="xxs-small text-gray-5 mb-0">Resueltos en el día</p>
+                        <button
+                            class="btn rounded-4 bg-white border x-text text-gray-5 d-flex align-items-center gap-1 py-2 px-3">
+                            <i class="bi bi-funnel"></i>
+                            <span>Filtros</span>
+                        </button>
                     </div>
+
+                    <div class="table-responsive">
+                        <table class="table mb-0 align-middle xs-text">
+                            <thead class="table-light border-bottom">
+                                <tr>
+                                    <th class="px-3 py-3 text-nowrap text-normal text-uppercase xxs-text text-gray-5">
+                                        Radicado <i class="bi bi-chevron-down opacity-25 text text-gray-5"></i></th>
+                                    <th class="px-3 py-3 text-nowrap text-normal text-uppercase xxs-text text-gray-5">
+                                        Fecha
+                                        Rad. <i class="bi bi-chevron-down text-primary text text-gray-5"></i></th>
+                                    <th class="px-3 py-3 text-nowrap text-normal text-uppercase xxs-text text-gray-5">
+                                        Tipo
+                                        <i class="bi bi-chevron-down opacity-25 text text-gray-5"></i>
+                                    </th>
+                                    <th class="px-3 py-3 text-nowrap text-normal text-uppercase xxs-text text-gray-5">
+                                        Servicio <i class="bi bi-chevron-down opacity-25 text text-gray-5"></i></th>
+                                    <th class="px-3 py-3 text-nowrap text-normal text-uppercase xxs-text text-gray-5">
+                                        Categoría <i class="bi bi-chevron-down opacity-25 text text-gray-5"></i></th>
+                                    <th class="px-3 py-3 text-nowrap text-normal text-uppercase xxs-text text-gray-5">
+                                        Subcategoría <i class="bi bi-chevron-down opacity-25 text text-gray-5"></i></th>
+                                    <th class="px-3 py-3 text-nowrap text-normal text-uppercase xxs-text text-gray-5">
+                                        Asociado <i class="bi bi-chevron-down opacity-25 text text-gray-5"></i></th>
+                                    <th class="px-3 py-3 text-nowrap text-normal text-uppercase xxs-text text-gray-5">
+                                        Responsable <i class="bi bi-chevron-down opacity-25 text text-gray-5"></i></th>
+                                    <th class="px-3 py-3 text-nowrap text-normal text-uppercase xxs-text text-gray-5">
+                                        Prioridad <i class="bi bi-chevron-down opacity-25 text text-gray-5"></i></th>
+                                    <th class="px-3 py-3 text-nowrap text-normal text-uppercase xxs-text text-gray-5">
+                                        Estado <i class="bi bi-chevron-down opacity-25 text text-gray-5"></i></th>
+                                    <th class="px-3 py-3 text-nowrap text-normal text-uppercase xxs-text text-gray-5">
+                                        Límite SLA <i class="bi bi-chevron-down opacity-25 text text-gray-5"></i></th>
+                                    <th class="px-3 py-3 text-nowrap text-normal text-uppercase xxs-text text-gray-5">
+                                        Semáforo <i class="bi bi-chevron-down opacity-25 text text-gray-5"></i></th>
+                                    <th class="px-3 py-3 text-nowrap text-normal text-uppercase xxs-text text-gray-5">
+                                        Acción</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tabla-body">
+                                <tr>
+                                    <td colspan="13" class="text-center py-5 x-text">
+                                        <div class="spinner-border spinner-border-sm me-2" role="status"></div>
+                                        Cargando casos...
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div
+                        class="card-footer bg-white d-flex flex-wrap align-items-center justify-content-between gap-3 py-3">
+                        <div class="d-flex align-items-center gap-3">
+                            <p class="mb-0 text x-text text-nowrap">
+                                Mostrando <span class="fw-semibold text-body" id="contador-inicio">1</span>–<span
+                                    class="fw-semibold text-body" id="contador-fin">10</span>
+                                de <span class="text-body" id="contador-total">0</span> casos
+                            </p>
+                            <select id="selector-pagina" class="form-select form-select-sm bg-white rounded-3 xs-text">
+                                <option value="10" selected>10 por página</option>
+                                <option value="25">25 por página</option>
+                                <option value="50">50 por página</option>
+                            </select>
+                        </div>
+                        <div class="d-flex align-items-center gap-1" id="paginacion-btns"></div>
+                    </div>
+
                 </div>
 
             </div>
-
-            <div class="card rounded-4 shadow-sm bg-white overflow-hidden">
-
-                <div class="d-flex gap-2 align-items-center w-100 p-2 border-bottom">
-                    <div class="position-relative flex-grow-1">
-                        <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3 xs-small"></i>
-                        <input id="input-busqueda" type="text"
-                            class="form-control rounded-4 bg-light border border-light-subtle py-1 ps-5 small"
-                            placeholder="Buscar por radicado o nombre del asociado...">
-                    </div>
-                    <button
-                        class="btn btn-outline-secondary rounded-4 bg-white border x-small d-flex align-items-center gap-1 py-2 px-3">
-                        <i class="bi bi-funnel"></i>
-                        <span>Filtros</span>
-                    </button>
-                </div>
-
-                <div class="table-responsive">
-                    <table class="table mb-0 align-middle xs-small">
-                        <thead class="table-light border-bottom">
-                            <tr>
-                                <th class="px-3 py-3 text-nowrap text-normal text-uppercase xxs-small text-gray-5">
-                                    Radicado <i class="bi bi-chevron-down opacity-25 small text-gray-5"></i></th>
-                                <th class="px-3 py-3 text-nowrap text-normal text-uppercase xxs-small text-gray-5">Fecha
-                                    Rad. <i class="bi bi-chevron-down text-primary small text-gray-5"></i></th>
-                                <th class="px-3 py-3 text-nowrap text-normal text-uppercase xxs-small text-gray-5">Tipo
-                                    <i class="bi bi-chevron-down opacity-25 small text-gray-5"></i></th>
-                                <th class="px-3 py-3 text-nowrap text-normal text-uppercase xxs-small text-gray-5">
-                                    Servicio <i class="bi bi-chevron-down opacity-25 small text-gray-5"></i></th>
-                                <th class="px-3 py-3 text-nowrap text-normal text-uppercase xxs-small text-gray-5">
-                                    Categoría <i class="bi bi-chevron-down opacity-25 small text-gray-5"></i></th>
-                                <th class="px-3 py-3 text-nowrap text-normal text-uppercase xxs-small text-gray-5">
-                                    Subcategoría <i class="bi bi-chevron-down opacity-25 small text-gray-5"></i></th>
-                                <th class="px-3 py-3 text-nowrap text-normal text-uppercase xxs-small text-gray-5">
-                                    Asociado <i class="bi bi-chevron-down opacity-25 small text-gray-5"></i></th>
-                                <th class="px-3 py-3 text-nowrap text-normal text-uppercase xxs-small text-gray-5">
-                                    Responsable <i class="bi bi-chevron-down opacity-25 small text-gray-5"></i></th>
-                                <th class="px-3 py-3 text-nowrap text-normal text-uppercase xxs-small text-gray-5">
-                                    Prioridad <i class="bi bi-chevron-down opacity-25 small text-gray-5"></i></th>
-                                <th class="px-3 py-3 text-nowrap text-normal text-uppercase xxs-small text-gray-5">
-                                    Estado <i class="bi bi-chevron-down opacity-25 small text-gray-5"></i></th>
-                                <th class="px-3 py-3 text-nowrap text-normal text-uppercase xxs-small text-gray-5">
-                                    Límite SLA <i class="bi bi-chevron-down opacity-25 small text-gray-5"></i></th>
-                                <th class="px-3 py-3 text-nowrap text-normal text-uppercase xxs-small text-gray-5">
-                                    Semáforo <i class="bi bi-chevron-down opacity-25 small text-gray-5"></i></th>
-                                <th class="px-3 py-3 text-nowrap text-normal text-uppercase xxs-small text-gray-5">
-                                    Acción</th>
-                            </tr>
-                        </thead>
-                        <tbody id="tabla-body">
-                            <tr>
-                                <td colspan="13" class="text-center py-5 x-small">
-                                    <div class="spinner-border spinner-border-sm me-2" role="status"></div>
-                                    Cargando casos...
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div
-                    class="card-footer bg-white d-flex flex-wrap align-items-center justify-content-between gap-3 py-3">
-                    <div class="d-flex align-items-center gap-3">
-                        <p class="mb-0 small x-small text-nowrap">
-                            Mostrando <span class="fw-semibold text-body" id="contador-inicio">1</span>–<span
-                                class="fw-semibold text-body" id="contador-fin">10</span>
-                            de <span class="text-body" id="contador-total">0</span> casos
-                        </p>
-                        <select id="selector-pagina" class="form-select form-select-sm bg-white rounded-3 xs-small">
-                            <option value="10" selected>10 por página</option>
-                            <option value="25">25 por página</option>
-                            <option value="50">50 por página</option>
-                        </select>
-                    </div>
-                    <div class="d-flex align-items-center gap-1" id="paginacion-btns"></div>
-                </div>
-
-            </div>
-
-        </div>
-    </main>
+        </main>
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>

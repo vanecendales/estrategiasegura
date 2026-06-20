@@ -17,72 +17,75 @@
 <body>
 
     <div class="d-flex vh-100 overflow-hidden">
+
         <div id="sidebar"
             class="d-flex z-3 position-relative justify-content-between text-nowrap flex-column p-0 text-white sidebar min-vh-100 position-relative"
-            style="width: 260px; transition: width .2s ease;">
+            >
 
-            <a href="#"
-                class="position-relative mb-2 py-4 px-3 text-white text-decoration-none border-bottom border-white border-opacity-25 d-flex align-items-center gap-2">
+        <a href="#"
+                class="position-relative mb-2 py-12 px-3 text-white text-decoration-none border-bottom border-white border-opacity-10 d-flex align-items-center gap-2">
                 <img src="../assets/images/logo.webp" height="32" width="32" alt="Logo" class="flex-shrink-0">
                 <span class="fs-6 fw-bold sidebar-text">GestorFPQRS</span>
                 <button id="sidebar-toggle"
-                    class="position-absolute top-50 end-0 translate-middle z-3 d-flex align-items-center justify-content-center bg-white border rounded-circle shadow-sm xxs-small"
+                    class="position-absolute top-50 end-0 translate-middle z-3 d-flex align-items-center justify-content-center bg-white border rounded-circle shadow-sm xxs-text"
                     aria-label="Colapsar menú">
                     <i id="sidebar-toggle-icon" class="bi bi-chevron-left"></i>
                 </button>
             </a>
-
-            <div class="mb-2 px-2">
-                <div class="text-uppercase text-white-50 xxs-small px-2 mb-2 opacity-50 sidebar-text">Operación</div>
+            <div class=" mb-1 px-2">
+ <div class="text-uppercase text-white-50 xxs-text px-2 pb-2 pt-2 tracking-1 opacity-50 sidebar-text">
+                    Operación
+                </div>
                 <ul class="nav nav-pills flex-column mb-auto gap-0">
                     <li class="nav-item">
                         <a href="Dashboard.html"
-                            class="nav-link text-white-50 d-flex justify-content-start align-items-center gap-2 rounded-3 pb-2 px-3 mb-1 small">
-                            <span class="d-flex align-items-start gap-2 small">
+                            class="nav-link d-flex text-white-50 align-items-center justify-content-between rounded-3 pb-2 px-3 mb-1"
+                            aria-current="page">
+                            <span class="d-flex align-items-center gap-3 text">
                                 <i class="bi bi-folder2-open"></i>
                                 <span class="sidebar-text">Bandeja de Casos</span>
                             </span>
-                            <span class="badge bg-danger rounded-pill px-2 py-2 sidebar-text">5</span>
+                            <span class="badge bg-danger rounded-pill px-2 py-2 xxs-text">5</span>
                         </a>
                     </li>
                     <li>
                         <a href="case-detail.html"
-                            class="nav-link active bg-white bg-opacity-10 text-white d-flex align-items-center justify-content-start gap-2 rounded-3 pb-2 px-3 mb-1">
+                            class="nav-link bg-white bg-opacity-10 text-white d-flex align-items-center gap-3 rounded-3 pb-2 px-3 mb-1 text">
                             <i class="bi bi-file-earmark-text flex-shrink-0"></i>
                             <span class="sidebar-text">Detalle de Caso</span>
                         </a>
                     </li>
                     <li>
                         <a href="fpqr.html"
-                            class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 pb-2 px-3 mb-1 small">
+                            class="nav-link text-white-50 d-flex align-items-center gap-3 rounded-3 pb-2 px-3 text">
                             <i class="bi bi-list-check"></i>
                             <span class="sidebar-text">Registrar FPQRS</span>
                         </a>
                     </li>
                     <li>
                         <a href="#"
-                            class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 pb-2 px-3 mb-1 small">
+                            class="nav-link text-white-50 d-flex align-items-center gap-3 rounded-3 pb-2 px-3 text">
                             <i class="bi bi-plus-square"></i>
                             <span class="sidebar-text">Crear Caso (Operador)</span>
                         </a>
                     </li>
                     <li>
                         <a href="#"
-                            class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 pb-2 px-3 mb-1 small">
+                            class="nav-link text-white-50 d-flex align-items-center gap-3 rounded-3 pb-2 px-3 text">
                             <i class="bi bi-bar-chart"></i>
                             <span class="sidebar-text">Métricas</span>
                         </a>
                     </li>
                     <li>
                         <a href="#"
-                            class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 pb-2 px-3 mb-1 small">
+                            class="nav-link text-white-50 d-flex align-items-center gap-3 rounded-3 pb-2 px-3 text">
                             <i class="bi bi-graph-up-arrow"></i>
                             <span class="sidebar-text">Analítica</span>
                         </a>
                     </li>
                     <li>
                         <a href="#"
-                            class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 pb-2 px-3 mb-1 small">
+                            class="nav-link text-white-50 d-flex align-items-center gap-3 rounded-3 pb-2 px-3 text">
                             <i class="bi bi-download"></i>
                             <span class="sidebar-text">Exportar Casos</span>
                         </a>
@@ -91,40 +94,17 @@
             </div>
 
             <div class="mb-2 px-2">
-                <div class="text-uppercase text-white-50 xxs-small px-2 mb-0 opacity-50 sidebar-text">Administración
+                <div class="text-uppercase text-white-50 xxs-text px-2 mb-0 opacity-50 sidebar-text">Administración
                 </div>
                 <ul class="nav nav-pills flex-column gap-1">
                     <li>
                         <a href="#"
-                            class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 pb-2 px-3 mb-1 small">
+                            class="nav-link text-white-50 d-flex align-items-center gap-3 rounded-3 pb-2 px-3 text">
                             <i class="bi bi-shield-check flex-shrink-0"></i>
                             <span class="sidebar-text">Auditoría</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="#"
-                            class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 pb-2 px-3 mb-1 small">
-                            <i class="bi bi-gear flex-shrink-0"></i>
-                            <span class="sidebar-text">Parametrización</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 pb-2 px-3 mb-1 small">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-flask" viewBox="0 0 16 16">
-                                <path
-                                    d="M4.5 0a.5.5 0 0 0 0 1H5v5.36L.503 13.717A1.5 1.5 0 0 0 1.783 16h12.434a1.5 1.5 0 0 0 1.28-2.282L11 6.359V1h.5a.5.5 0 0 0 0-1zM10 2H9a.5.5 0 0 0 0 1h1v1H9a.5.5 0 0 0 0 1h1v1H9a.5.5 0 0 0 0 1h1.22l.61 1H10a.5.5 0 1 0 0 1h1.442l.611 1H11a.5.5 0 1 0 0 1h1.664l.611 1H12a.5.5 0 1 0 0 1h1.886l.758 1.24a.5.5 0 0 1-.427.76H1.783a.5.5 0 0 1-.427-.76l4.57-7.48A.5.5 0 0 0 6 6.5V1h4z" />
-                            </svg> <span class="sidebar-text">Parametros Alt</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 pb-2 px-3 mb-1 small">
-                            <i class="bi bi-book flex-shrink-0"></i>
-                            <span class="sidebar-text">Nodelo Cat. Resp.</span>
-                        </a>
-                    </li>
+                    
                 </ul>
             </div>
 
@@ -132,7 +112,7 @@
 
             <div class="d-flex flex-column gap-1 mb-2 px-3">
                 <a href="#"
-                    class="small nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 mb-2 px-2 small">
+                    class="text nav-link text-white-50 d-flex align-items-center gap-3 rounded-3 mb-2 px-2 text">
                     <i class="bi bi-bell flex-shrink-0"></i>
                     <span class="sidebar-text">Notificaciones</span>
                 </a>
@@ -140,12 +120,12 @@
                     <div class="bg-secondary rounded-circle me-2 d-flex align-items-center justify-content-center flex-shrink-0"
                         style="width:28px;height:28px;"><i class="bi bi-person"></i></div>
                     <div class="d-flex flex-column lh-1 sidebar-text">
-                        <span class="text-white small">Sofía Martínez</span>
-                        <small class="text-white-50 opacity-50">Administrador</small>
+                        <span class="text-white text">Sofía Martínez</span>
+                        <small class="text-white-50 opacity-5">Administrador</small>
                     </div>
                 </div>
                 <a href="#"
-                    class="nav-link text-white-50 d-flex align-items-center gap-2 rounded-3 py-2 px-2 small mb-1">
+                    class="nav-link text-white-50 d-flex align-items-center gap-3 rounded-3 py-2 px-2 text mb-1">
                     <i class="bi bi-box-arrow-left flex-shrink-0"></i>
                     <span class="sidebar-text">Cerrar sesión</span>
                 </a>
@@ -154,55 +134,56 @@
         </div>
 
         <main class="flex-fill overflow-y-auto">
-            <div class="px-3 py-4 px-lg-4">
+            <div class="p-4 px-lg-4">
 
-                <div class="d-flex align-items-start justify-content-between mb-4 gap-3 flex-wrap">
+                <div class="d-flex align-items-start justify-content-between mb-3 gap-3 flex-wrap  content-header">
                     <div>
-                        <div class="d-flex align-items-center gap-1 mb-3 xs-small text-secondary">
-                            <a href="dashboard.html"
-                                class="text-secondary text-decoration-none d-flex align-items-center gap-1">
-                                <i class="bi bi-chevron-left xxs-small"></i>Bandeja de Casos
-                            </a>
-                            <span>/</span>
-                            <span class="text-gray-9">FPQRS-2026-04779</span>
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <div class="d-flex align-items-center gap-1 xs-text text-secondary">
+                                <a href="dashboard.html"
+                                    class="text-secondary text-decoration-none d-flex align-items-center gap-1">
+                                    <i class="bi bi-chevron-left xxs-text"></i>Bandeja de Casos
+                                </a>
+                                <span>/</span>
+                                <span class="text-gray-9">FPQRS-2026-04779</span>
+                            </div>
+                            <button
+                                class="btn btn-sm bg-transparent d-flex align-items-center gap-2 rounded-4 px-3 py-2 border">
+                                <i class="bi bi-person-check"></i> Reasignar
+                            </button>
                         </div>
                         <div class="d-flex align-items-center gap-2 flex-wrap mb-2">
-                            <h1 class="m-0 fs-4 d-inline-flex align-items-center">FPQRS-2026-04779</h1>
+                            <h1 class="m-0 fs-4 fw-normal d-inline-flex align-items-center">FPQRS-2026-04779</h1>
                             <span
-                                class="badge fw-normal whitespace-nowrap px-2 py-0.5 xs-small status-pendiente">Pendiente
+                                class="badge fw-normal whitespace-nowrap px-2 py-05 xs-text status-pendiente">Pendiente
                                 de Información</span>
+                            <span class="badge fw-normal whitespace-nowrap px-2 py-05 xs-text text-orange">Queja</span>
                             <span
-                                class="badge fw-normal whitespace-nowrap px-2 py-0.5 xs-small text-orange">Queja</span>
-                            <span
-                                class="badge fw-normal whitespace-nowrap px-2 py-0.5 xs-small sla-rojo d-flex justify-content-center"><span
+                                class="badge fw-normal whitespace-nowrap px-2 py-05 xs-text sla-rojo d-flex align-items-center justify-content-center"><span
                                     class="sla-dot bg-danger"></span>Vencido</span>
                         </div>
-                        <p class="xs-small text-secondary mb-0">Radicado el 04/05/2026 18:00 · Canal: App Móvil</p>
+                        <p class="xs-text text-secondary mb-0">Radicado el 04/05/2026 18:00 · Canal: App Móvil</p>
                     </div>
-                    <button class="btn btn-sm d-flex align-items-center gap-2 rounded-3 px-3 py-2 border"
-                        style="color:#1e3a5f; border-color:rgba(30,58,95,.3);">
-                        <i class="bi bi-person-check"></i> Reasignar
-                    </button>
                 </div>
 
                 <div class="alert alert-sla-danger bg-danger-subtle border-danger d-flex align-items-start gap-3 rounded-3 mb-3 py-2"
                     role="alert">
                     <i class="bi bi-exclamation-triangle fs-5 text-danger mt-1 flex-shrink-0"></i>
                     <div>
-                        <p class="mb-0 text-danger small">SLA vencido — Atención urgente requerida</p>
-                        <p class="mb-0 text-danger mt-1 xs-small">La fecha límite de respuesta fue 05/05/2026 03:00.
+                        <p class="mb-0 text-danger text">SLA vencido — Atención urgente requerida</p>
+                        <p class="mb-0 text-danger mt-1 xs-text">La fecha límite de respuesta fue 05/05/2026 03:00.
                             Este caso requiere acción inmediata.</p>
                     </div>
                 </div>
 
-                <div class="row g-4">
+                <div class="row g-4 content-tables rounded-3 mb-3 py-2">
 
                     <div class="col-12 col-xl-8 d-flex flex-column gap-4">
 
                         <div class="card border rounded-4 shadow-sm bg-white overflow-hidden">
                             <div class="card-header bg-white d-flex align-items-center gap-2 py-3">
                                 <i class="bi bi-person text-primary"></i>
-                                <span class="small">Datos del Asociado</span>
+                                <span class="text">Datos del Asociado</span>
                             </div>
                             <div class="card-body">
                                 <div class="row g-3">
@@ -233,7 +214,7 @@
                         <div class="card border rounded-4 shadow-sm bg-white overflow-hidden">
                             <div class="card-header bg-white d-flex align-items-center gap-2 py-3">
                                 <i class="bi bi-briefcase text-primary"></i>
-                                <span class="small">Datos del Caso</span>
+                                <span class="text">Datos del Caso</span>
                             </div>
                             <div class="card-body">
                                 <div class="row g-3">
@@ -252,11 +233,11 @@
                                     <div class="col-6 col-md-4">
                                         <p class="detail-label">Responsable</p>
                                         <p class="detail-value mb-0">Rodrigo Esteban Muñoz</p>
-                                        <p class="xs-small text-secondary mb-0">Operaciones Financieras</p>
+                                        <p class="xs-text text-secondary mb-0">Operaciones Financieras</p>
                                     </div>
                                     <div class="col-6 col-md-4">
                                         <p class="detail-label">Prioridad</p>
-                                        <span class="badge-soft badge-soft-danger">Crítica</span>
+                                        <span class="badge-soft priority-critica">Crítica</span>
                                     </div>
                                     <div class="col-6 col-md-4">
                                         <p class="detail-label">SLA aplicado</p>
@@ -280,34 +261,35 @@
                                 <ul class="nav nav-underline nav-fill p-0" id="tabsCaso" role="tablist">
                                     <li class="nav-item px-0" role="presentation">
                                         <button
-                                            class="nav-link active text-gray-5 h-100 d-flex align-items-center gap-2 px-0 py-3"
+                                            class="nav-link text active text-gray-5 h-100 d-flex align-items-center gap-2 px-0 py-3"
                                             data-bs-toggle="tab" data-bs-target="#pane-desc" type="button" role="tab">
                                             <i class="bi bi-file-text"></i> Descripción
                                         </button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link d-flex h-100 text-gray-5 align-items-center gap-2"
+                                        <button class="nav-link text d-flex h-100 text-gray-5 align-items-center gap-2"
                                             data-bs-toggle="tab" data-bs-target="#pane-com" type="button" role="tab">
                                             <i class="bi bi-chat-square "></i> Comentarios
-                                            <span class="badge-soft badge-soft-primary m-0 p-0">3</span>
+                                            <span class="badge-soft badge-soft-primary">3</span>
                                         </button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link d-flex h-100 text-gray-5 align-items-center gap-2"
+                                        <button class="nav-link text d-flex h-100 text-gray-5 align-items-center gap-2"
                                             data-bs-toggle="tab" data-bs-target="#pane-adj" type="button" role="tab">
                                             <i class="bi bi-paperclip"></i> Adjuntos
                                             <span class="badge-soft badge-soft-primary">3</span>
                                         </button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link d-flex h-100 text-gray-5 align-items-center gap-2 "
+                                        <button class="nav-link text d-flex h-100 text-gray-5 align-items-center gap-2 "
                                             data-bs-toggle="tab" data-bs-target="#pane-hist" type="button" role="tab">
                                             <i class="bi bi-clock-history"></i> Historial
                                             <span class="badge-soft badge-soft-primary">11</span>
                                         </button>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link d-flex h-100 text-gray-5 align-items-center gap-2 small"
+                                        <button
+                                            class="nav-link text d-flex h-100 text-gray-5 align-items-center gap-2 text"
                                             data-bs-toggle="tab" data-bs-target="#pane-resp" type="button" role="tab">
                                             <i class="bi bi-reply"></i> Respuestas
                                         </button>
@@ -319,7 +301,7 @@
                                 <div class="tab-pane fade show active" id="pane-desc" role="tabpanel">
                                     <p class="detail-label mb-3">Descripción del caso</p>
                                     <div class=" p-3 ">
-                                        <p class="x-small mb-0">Pago PSE por $2.350.000 al banco Davivienda no fue
+                                        <p class="x-text mb-0">Pago PSE por $2.350.000 al banco Davivienda no fue
                                             acreditado. Código: PSE-20260503-8847.</p>
                                     </div>
                                 </div>
@@ -327,19 +309,19 @@
 
                                 <div class="tab-pane fade" id="pane-com" role="tabpanel">
                                     <div class="d-flex align-items-center justify-content-between mb-3">
-                                        <span class="x-small d-flex align-items-center gap-2">
-                                            <i class="bi bi-chat-square fs-6 text-primary"></i>
-                                            Comentarios <span class="text-gray-5">3</span>
+                                        <span class="text d-flex align-items-center gap-2 py-1">
+                                            <i class="bi bi-chat-square text text-primary"></i>
+                                            Comentarios <span class="text-gray-5 xxs-text">3</span>
                                         </span>
                                         <div class="d-flex align-items-center gap-4">
-                                            <div class="d-flex gap-4 xs-small align-items-center text-gray-5">
+                                            <div class="d-flex gap-4 xxs-text align-items-center text-gray-5">
                                                 <span role="button"
                                                     class="rounded-3 bg-white p-1 fw-medium shadow-sm text-gray-9">Todos</span>
                                                 <span role="button">Internos</span>
                                                 <span role="button">Visibles</span>
                                             </div>
                                             <button
-                                                class="btn btn-primary btn-sm rounded-4 d-flex align-items-center gap-2 xs-small py-0"
+                                                class="btn btn-primary btn-sm rounded-4 d-flex align-items-center gap-2 xs-text py-0"
                                                 type="button" data-bs-toggle="collapse"
                                                 data-bs-target="#form-nuevo-comentario" aria-expanded="false">
                                                 <i class="bi bi-plus"></i> Agregar comentario
@@ -352,15 +334,14 @@
                                         <div class="border rounded-3 overflow-hidden">
                                             <div class="px-3 py-2 border-bottom bg-light bg-opacity-50">
                                                 <p
-                                                    class="xxs-small text-uppercase fw-semibold text-gray-5 mb-0 d-flex align-items-center gap-2">
+                                                    class="xxs-text text-uppercase fw-semibold text-gray-5 mb-0 d-flex align-items-center gap-2">
                                                     <i class="bi bi-plus"></i> Nuevo comentario
                                                 </p>
                                             </div>
                                             <div class="p-3">
 
                                                 <div class="mb-3">
-                                                    <label
-                                                        class="xxs-small text-uppercase fw-semibold text-gray-5 mb-2">
+                                                    <label class="xxs-text text-uppercase fw-semibold text-gray-5 mb-2">
                                                         Tipo de comentario <span class="text-danger">*</span>
                                                     </label>
                                                     <div class="d-flex align-items-start gap-4">
@@ -368,18 +349,18 @@
                                                             <input class="form-check-input" type="radio"
                                                                 name="tipo-comentario" id="tipo-interno" checked>
                                                             <label
-                                                                class="form-check-label xs-small d-flex align-items-center gap-1"
+                                                                class="form-check-label xs-text d-flex align-items-center gap-1"
                                                                 for="tipo-interno">
                                                                 <i class="bi bi-lock text-gray-5"></i> Interno
                                                             </label>
-                                                            <p class="xxs-small text-gray-5 mb-0 mt-1">Solo visible para
+                                                            <p class="xxs-text text-gray-5 mb-0 mt-1">Solo visible para
                                                                 operadores internos del sistema.</p>
                                                         </div>
                                                         <div class="form-check mb-0">
                                                             <input class="form-check-input" type="radio"
                                                                 name="tipo-comentario" id="tipo-visible">
                                                             <label
-                                                                class="form-check-label xs-small d-flex align-items-center gap-1"
+                                                                class="form-check-label xs-text d-flex align-items-center gap-1"
                                                                 for="tipo-visible">
                                                                 <i class="bi bi-eye text-primary"></i> Visible para el
                                                                 asociado
@@ -389,15 +370,14 @@
                                                 </div>
 
                                                 <div class="mb-1">
-                                                    <label
-                                                        class="xxs-small text-uppercase fw-semibold text-gray-5 mb-1">
+                                                    <label class="xxs-text text-uppercase fw-semibold text-gray-5 mb-1">
                                                         Comentario <span class="text-danger">*</span>
                                                     </label>
                                                     <textarea id="texto-comentario" rows="4"
                                                         class="form-control form-control-sm rounded-3"
                                                         placeholder="Escriba el comentario del caso..."
                                                         oninput="document.getElementById('contador-chars').textContent = this.value.length + ' caracteres'"></textarea>
-                                                    <p class="xxs-small text-gray-5 text-end mt-1 mb-0"
+                                                    <p class="xxs-text text-gray-5 text-end mt-1 mb-0"
                                                         id="contador-chars">0 caracteres</p>
                                                 </div>
 
@@ -428,21 +408,21 @@
                                                         J</div>
                                                     <div>
                                                         <div class="d-flex align-items-center gap-1">
-                                                            <span class="xs-small">Jorge Iván Castillo</span>
+                                                            <span class="xs-text">Jorge Iván Castillo</span>
                                                             <span
-                                                                class="xxs-small px-2 py-0 rounded-4 bg-slate-200 text-slate-700 d-flex align-items-center gap-1">
+                                                                class="xxs-text px-2 py-0 rounded-4 bg-slate-200 text-slate-700 d-flex align-items-center gap-1">
                                                                 <i class="bi bi-lock"></i> Interno
                                                             </span>
                                                         </div>
-                                                        <span class="xxs-small text-gray-5">
+                                                        <span class="xxs-text text-gray-5">
                                                             <i class="bi bi-clock me-1"></i>04/05/2026 18:50 · <span
                                                                 class="text-gray-7">IP: 190.24.135.78</span>
                                                         </span>
                                                     </div>
                                                 </div>
-                                                <i class="bi bi-chevron-up xs-small text-gray-5"></i>
+                                                <i class="bi bi-chevron-up xs-text text-gray-5"></i>
                                             </div>
-                                            <div class="rounded-3 px-3 py-2 bg-white border border-slate-200 small">
+                                            <div class="rounded-3 px-3 py-2 bg-white border border-slate-200 text">
                                                 <p class="mb-0">Se solicita validación al área de cartera sobre el
                                                     estado de la transacción PSE. El débito fue aplicado pero no se
                                                     refleja acreditación en el banco destino.</p>
@@ -457,21 +437,21 @@
                                                         J</div>
                                                     <div>
                                                         <div class="d-flex align-items-center gap-1">
-                                                            <span class="xs-small">Jorge Iván Castillo</span>
+                                                            <span class="xs-text">Jorge Iván Castillo</span>
                                                             <span
-                                                                class="xxs-small px-2 py-0 rounded-4 bg-emerald-200 text-emerald-800 d-flex align-items-center gap-1">
+                                                                class="xxs-text px-2 py-0 rounded-4 bg-emerald-200 text-emerald-800 d-flex align-items-center gap-1">
                                                                 <i class="bi bi-eye"></i> Visible al Asociado
                                                             </span>
                                                         </div>
-                                                        <span class="xxs-small text-gray-5">
+                                                        <span class="xxs-text text-gray-5">
                                                             <i class="bi bi-clock me-1"></i>04/05/2026 09:30 · <span
                                                                 class="text-gray-7">IP: 190.24.135.78</span>
                                                         </span>
                                                     </div>
                                                 </div>
-                                                <i class="bi bi-chevron-up xs-small text-gray-5"></i>
+                                                <i class="bi bi-chevron-up xs-text text-gray-5"></i>
                                             </div>
-                                            <div class="rounded-3 px-3 py-2 bg-white border border-emerald-200 small">
+                                            <div class="rounded-3 px-3 py-2 bg-white border border-emerald-200 text">
                                                 <p class="mb-0">Estimado asociado, hemos recibido su caso y estamos
                                                     gestionando la verificación del pago PSE con la pasarela
                                                     correspondiente. Le informaremos en un plazo máximo de 24 horas.</p>
@@ -486,21 +466,21 @@
                                                         R</div>
                                                     <div>
                                                         <div class="d-flex align-items-center gap-1">
-                                                            <span class="xs-small">Rodrigo Esteban Muñoz</span>
+                                                            <span class="xs-text">Rodrigo Esteban Muñoz</span>
                                                             <span
-                                                                class="xxs-small px-2 py-0 rounded-4 bg-slate-200 text-slate-700 d-flex align-items-center gap-1">
+                                                                class="xxs-text px-2 py-0 rounded-4 bg-slate-200 text-slate-700 d-flex align-items-center gap-1">
                                                                 <i class="bi bi-lock"></i> Interno
                                                             </span>
                                                         </div>
-                                                        <span class="xxs-small text-gray-5">
+                                                        <span class="xxs-text text-gray-5">
                                                             <i class="bi bi-clock me-1"></i>04/05/2026 09:30 · <span
                                                                 class="text-gray-7">IP: 760.24.545.78</span>
                                                         </span>
                                                     </div>
                                                 </div>
-                                                <i class="bi bi-chevron-up xs-small text-gray-5"></i>
+                                                <i class="bi bi-chevron-up xs-text text-gray-5"></i>
                                             </div>
-                                            <div class="rounded-3 px-3 py-2 bg-white border border-slate-200 small">
+                                            <div class="rounded-3 px-3 py-2 bg-white border border-slate-200 text">
                                                 <p class="mb-0">Confirmado con PSE: transacción procesada correctamente
                                                     en su extremo. El problema está en la red interbancaria entre PSE y
                                                     Davivienda. Se está escalando con el banco destino para la
@@ -514,13 +494,13 @@
                                 <div class="tab-pane fade" id="pane-adj" role="tabpanel">
 
                                     <div class="d-flex align-items-center justify-content-between mb-3">
-                                        <span class="small d-flex align-items-center gap-2">
-                                            <i class="bi bi-paperclip fs-6 text-primary"></i> Adjuntos <span
-                                                class="text-gray-5">3</span>
+                                        <span class="text d-flex align-items-center gap-2 py-1">
+                                            <i class="bi bi-paperclip text text-primary"></i> Adjuntos <span
+                                                class="text-gray-5 xxs-text">3</span>
                                         </span>
-                                        <div class="d-flex align-items-center gap-2 xs-small">
+                                        <div class="d-flex align-items-center gap-2 xs-text">
                                             <select id="filtro-tipo"
-                                                class="form-select form-select-sm rounded-4 bg-white xs-small">
+                                                class="form-select form-select-sm rounded-4 bg-white xs-text">
                                                 <option value="">Todos los tipos</option>
                                                 <option value="Registro inicial">Registro inicial</option>
                                                 <option value="Gestión interna">Gestión interna</option>
@@ -528,7 +508,7 @@
                                                 <option value="Respuesta al asociado">Respuesta al asociado</option>
                                             </select>
                                             <button
-                                                class="btn btn-primary btn-sm rounded-4 d-flex align-items-center text-nowrap gap-2 py-0 px-2 xs-small"
+                                                class="btn btn-primary btn-sm rounded-4 d-flex align-items-center text-nowrap gap-2 py-0 px-3 xs-text"
                                                 type="button" data-bs-toggle="collapse"
                                                 data-bs-target="#form-cargar-adjunto" aria-expanded="false">
                                                 <i class="bi bi-plus"></i> Cargar adjunto
@@ -539,7 +519,7 @@
                                     <div class="collapse mb-3" id="form-cargar-adjunto">
                                         <div class="border rounded-3 overflow-hidden">
                                             <div class="px-3 py-2 border-bottom bg-light bg-opacity-50">
-                                                <p class="xxs-small text-uppercase fw-semibold text-gray-5 mb-0">Cargar
+                                                <p class="xxs-text text-uppercase fw-semibold text-gray-5 mb-0">Cargar
                                                     nuevo adjunto</p>
                                             </div>
                                             <div class="p-3">
@@ -548,24 +528,23 @@
                                                     role="button">
                                                     <input type="file" id="input-archivo" class="d-none">
                                                     <i class="bi bi-upload fs-4 text-primary d-block mb-2"></i>
-                                                    <p class="small text-primary mb-1">Haga clic o arrastre un archivo
+                                                    <p class="text text-primary mb-1">Haga clic o arrastre un archivo
                                                         aquí</p>
-                                                    <p class="xxs-small text-gray-5 mb-0">PDF, Word, Excel, imágenes,
+                                                    <p class="xxs-text text-gray-5 mb-0">PDF, Word, Excel, imágenes,
                                                         audio, video · Máx. 20 MB</p>
                                                 </div>
 
                                                 <div
-                                                    class="d-flex align-items-center gap-2 rounded-3 px-3 py-2 mb-3 bg-primary bg-opacity-10">
+                                                    class="d-flex align-items-center gap-3 rounded-3 px-3 py-2 mb-3 bg-primary bg-opacity-10">
                                                     <i
-                                                        class="bi bi-shield-check xxs-small text-primary flex-shrink-0"></i>
-                                                    <p class="xxs-small text-primary mb-0">Solo se permiten archivos
+                                                        class="bi bi-shield-check xxs-text text-primary flex-shrink-0"></i>
+                                                    <p class="xxs-text text-primary mb-0">Solo se permiten archivos
                                                         seguros. Ejecutables, scripts y archivos comprimidos están
                                                         bloqueados.</p>
                                                 </div>
 
                                                 <div class="mb-3">
-                                                    <label
-                                                        class="xxs-small text-uppercase fw-semibold text-gray-5 mb-1">
+                                                    <label class="xxs-text text-uppercase fw-semibold text-gray-5 mb-1">
                                                         Tipo de adjunto <span class="text-danger">*</span>
                                                     </label>
                                                     <select class="form-select form-select-sm rounded-3">
@@ -579,13 +558,13 @@
 
                                                 <div class="mb-3">
                                                     <label
-                                                        class="xxs-small text-uppercase fw-semibold text-gray-5 mb-2">Visibilidad</label>
+                                                        class="xxs-text text-uppercase fw-semibold text-gray-5 mb-2">Visibilidad</label>
                                                     <div class="d-flex align-items-center gap-4">
                                                         <div class="form-check mb-0">
                                                             <input class="form-check-input" type="radio"
                                                                 name="visibilidad" id="vis-interno" checked>
                                                             <label
-                                                                class="form-check-label xs-small d-flex align-items-center gap-1"
+                                                                class="form-check-label xs-text d-flex align-items-center gap-1"
                                                                 for="vis-interno">
                                                                 <i class="bi bi-eye-slash text-gray-5"></i> Solo interno
                                                             </label>
@@ -594,7 +573,7 @@
                                                             <input class="form-check-input" type="radio"
                                                                 name="visibilidad" id="vis-asociado">
                                                             <label
-                                                                class="form-check-label xs-small d-flex align-items-center gap-1"
+                                                                class="form-check-label xs-text d-flex align-items-center gap-1"
                                                                 for="vis-asociado">
                                                                 <i class="bi bi-eye text-primary"></i> Visible al
                                                                 asociado
@@ -620,26 +599,26 @@
 
                                     <div id="lista-adjuntos" class="d-flex flex-column gap-2">
 
-                                        <div class="card border rounded-3 overflow-hidden shadow-sm"
+                                        <div class="card border rounded-4 overflow-hidden bg-white "
                                             data-tipo="Registro inicial">
-                                            <div class="d-flex align-items-center gap-3 px-4 py-3">
-                                                <div
-                                                    class="rounded-3 d-flex align-items-center justify-content-center flex-shrink-0 bg-primary bg-opacity-10 stat-icon">
+                                            <div class="d-flex align-items-center gap-3 px-3 py-25">
+                                                <div class="d-flex align-items-center justify-content-center stat-icon">
                                                     <i class="bi bi-file-text text-primary"></i>
                                                 </div>
                                                 <div class="flex-grow-1 min-w-0">
                                                     <div class="d-flex align-items-center gap-2 flex-wrap">
                                                         <p
-                                                            class="small fw-semibold text-dark text-truncate file-name-truncate mb-0">
+                                                            class="text text-dark text-truncate file-name-truncate mb-0 fw-medium">
                                                             comprobante_pse_20260503.pdf</p>
-                                                        <span class="badge-soft status-radicado">Registro inicial</span>
+                                                        <span class="badge-soft status-radicado xxs-text">Registro
+                                                            inicial</span>
                                                         <span
-                                                            class="badge-soft status-cerrado d-flex align-items-center gap-1">
+                                                            class="badge-soft status-cerrado d-flex align-items-center gap-1 xxs-text">
                                                             <i class="bi bi-eye-slash"></i> Interno
                                                         </span>
                                                     </div>
                                                     <div
-                                                        class="d-flex align-items-center gap-3 mt-1 text-gray-5 xxs-small font-monospace">
+                                                        class="d-flex align-items-center gap-3 mt-1 text-gray-5 xxs-text font-monospace">
                                                         <span>245.0 KB</span>
                                                         <span class="text-uppercase fw-semibold">.pdf</span>
                                                         <span>04/05/2026 19:05</span>
@@ -652,43 +631,43 @@
                                                 </button>
                                             </div>
                                             <div class="collapse" id="meta-doc-1">
-                                                <div class="border-top px-4 py-3 bg-light bg-opacity-50">
-                                                    <div class="row row-cols-3 g-3 xs-small">
+                                                <div class="border-top px-4 py-3">
+                                                    <div class="row row-cols-3 g-3 xs-text">
                                                         <div>
                                                             <p
-                                                                class="text-gray-5 text-uppercase fw-semibold xxs-small mb-1">
+                                                                class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
                                                                 Cargado por</p>
                                                             <p class="mb-0 d-flex align-items-center gap-1"><i
                                                                     class="bi bi-person"></i> Valentina Ospina Ríos</p>
                                                         </div>
                                                         <div>
                                                             <p
-                                                                class="text-gray-5 text-uppercase fw-semibold xxs-small mb-1">
+                                                                class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
                                                                 Fecha de carga</p>
                                                             <p class="mb-0 d-flex align-items-center gap-1"><i
                                                                     class="bi bi-clock"></i> 04/05/2026 19:05</p>
                                                         </div>
                                                         <div>
                                                             <p
-                                                                class="text-gray-5 text-uppercase fw-semibold xxs-small mb-1">
+                                                                class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
                                                                 IP de carga</p>
                                                             <p class="mb-0 font-monospace">190.24.135.78</p>
                                                         </div>
                                                         <div>
                                                             <p
-                                                                class="text-gray-5 text-uppercase fw-semibold xxs-small mb-1">
+                                                                class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
                                                                 Tipo MIME</p>
                                                             <p class="mb-0 font-monospace">application/pdf</p>
                                                         </div>
                                                         <div>
                                                             <p
-                                                                class="text-gray-5 text-uppercase fw-semibold xxs-small mb-1">
+                                                                class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
                                                                 Tamaño</p>
                                                             <p class="mb-0">245.0 KB</p>
                                                         </div>
                                                         <div>
                                                             <p
-                                                                class="text-gray-5 text-uppercase fw-semibold xxs-small mb-1">
+                                                                class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
                                                                 Tipo adjunto</p>
                                                             <p class="mb-0">Registro inicial</p>
                                                         </div>
@@ -697,26 +676,27 @@
                                             </div>
                                         </div>
 
-                                        <div class="card border rounded-3 overflow-hidden shadow-sm"
+                                        <div class="card border rounded-4 overflow-hidden bg-white "
                                             data-tipo="Registro inicial">
-                                            <div class="d-flex align-items-center gap-3 px-4 py-3">
+                                            <div class="d-flex align-items-center gap-3 px-3 py-25">
                                                 <div
-                                                    class="rounded-3 d-flex align-items-center justify-content-center flex-shrink-0 bg-primary bg-opacity-10 stat-icon">
-                                                    <i class="bi bi-image text-primary"></i>
+                                                    class="rounded-3 d-flex align-items-center justify-content-center flex-shrink-0 bg-primary text-blue-500 bg-opacity-10 stat-icon">
+                                                    <i class="bi bi-image"></i>
                                                 </div>
                                                 <div class="flex-grow-1 min-w-0">
                                                     <div class="d-flex align-items-center gap-2 flex-wrap">
                                                         <p
-                                                            class="small fw-semibold text-dark text-truncate file-name-truncate mb-0">
+                                                            class="text text-dark text-truncate file-name-truncate mb-0 fw-medium">
                                                             captura_transaccion.png</p>
-                                                        <span class="badge-soft status-radicado">Registro inicial</span>
+                                                        <span class="badge-soft status-radicado xxs-text">Registro
+                                                            inicial</span>
                                                         <span
-                                                            class="badge-soft status-cerrado d-flex align-items-center gap-1">
+                                                            class="badge-soft status-cerrado d-flex align-items-center gap-1 xxs-text">
                                                             <i class="bi bi-eye-slash"></i> Interno
                                                         </span>
                                                     </div>
                                                     <div
-                                                        class="d-flex align-items-center gap-3 mt-1 text-gray-5 xxs-small font-monospace">
+                                                        class="d-flex align-items-center gap-3 mt-1 text-gray-5 xxs-text font-monospace">
                                                         <span>128.0 KB</span>
                                                         <span class="text-uppercase fw-semibold">.png</span>
                                                         <span>04/05/2026 19:07</span>
@@ -729,43 +709,43 @@
                                                 </button>
                                             </div>
                                             <div class="collapse" id="meta-doc-2">
-                                                <div class="border-top px-4 py-3 bg-light bg-opacity-50">
-                                                    <div class="row row-cols-3 g-3 xs-small">
+                                                <div class="border-top px-4 py-3">
+                                                    <div class="row row-cols-3 g-3 xs-text">
                                                         <div>
                                                             <p
-                                                                class="text-gray-5 text-uppercase fw-semibold xxs-small mb-1">
+                                                                class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
                                                                 Cargado por</p>
                                                             <p class="mb-0 d-flex align-items-center gap-1"><i
                                                                     class="bi bi-person"></i> Valentina Ospina Ríos</p>
                                                         </div>
                                                         <div>
                                                             <p
-                                                                class="text-gray-5 text-uppercase fw-semibold xxs-small mb-1">
+                                                                class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
                                                                 Fecha de carga</p>
                                                             <p class="mb-0 d-flex align-items-center gap-1"><i
                                                                     class="bi bi-clock"></i> 04/05/2026 19:07</p>
                                                         </div>
                                                         <div>
                                                             <p
-                                                                class="text-gray-5 text-uppercase fw-semibold xxs-small mb-1">
+                                                                class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
                                                                 IP de carga</p>
                                                             <p class="mb-0 font-monospace">190.24.135.78</p>
                                                         </div>
                                                         <div>
                                                             <p
-                                                                class="text-gray-5 text-uppercase fw-semibold xxs-small mb-1">
+                                                                class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
                                                                 Tipo MIME</p>
                                                             <p class="mb-0 font-monospace">image/png</p>
                                                         </div>
                                                         <div>
                                                             <p
-                                                                class="text-gray-5 text-uppercase fw-semibold xxs-small mb-1">
+                                                                class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
                                                                 Tamaño</p>
                                                             <p class="mb-0">128.0 KB</p>
                                                         </div>
                                                         <div>
                                                             <p
-                                                                class="text-gray-5 text-uppercase fw-semibold xxs-small mb-1">
+                                                                class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
                                                                 Tipo adjunto</p>
                                                             <p class="mb-0">Registro inicial</p>
                                                         </div>
@@ -774,26 +754,27 @@
                                             </div>
                                         </div>
 
-                                        <div class="card border rounded-3 overflow-hidden shadow-sm"
+                                        <div class="card border rounded-4 overflow-hidden bg-white"
                                             data-tipo="Gestión interna">
-                                            <div class="d-flex align-items-center gap-3 px-4 py-3">
+                                            <div class="d-flex align-items-center gap-3 px-3 py-25">
                                                 <div
-                                                    class="rounded-3 d-flex align-items-center justify-content-center flex-shrink-0 bg-primary bg-opacity-10 stat-icon">
+                                                    class="rounded-3 d-flex align-items-center justify-content-center stat-icon">
                                                     <i class="bi bi-file-text text-primary"></i>
                                                 </div>
                                                 <div class="flex-grow-1 min-w-0">
                                                     <div class="d-flex align-items-center gap-2 flex-wrap">
                                                         <p
-                                                            class="small fw-semibold text-dark text-truncate file-name-truncate mb-0">
+                                                            class="text text-dark text-truncate file-name-truncate mb-0 fw-medium">
                                                             respuesta_pse_interbancaria.pdf</p>
-                                                        <span class="badge-soft status-cerrado">Gestión interna</span>
+                                                        <span class="badge-soft status-cerrado xxs-text">Gestión
+                                                            interna</span>
                                                         <span
-                                                            class="badge-soft status-cerrado d-flex align-items-center gap-1">
+                                                            class="badge-soft status-cerrado d-flex align-items-center gap-1 xxs-text">
                                                             <i class="bi bi-eye-slash"></i> Interno
                                                         </span>
                                                     </div>
                                                     <div
-                                                        class="d-flex align-items-center gap-3 mt-1 text-gray-5 xxs-small font-monospace">
+                                                        class="d-flex align-items-center gap-3 mt-1 text-gray-5 xxs-text font-monospace">
                                                         <span>180.0 KB</span>
                                                         <span class="text-uppercase fw-semibold">.pdf</span>
                                                         <span>05/05/2026 09:45</span>
@@ -806,43 +787,43 @@
                                                 </button>
                                             </div>
                                             <div class="collapse" id="meta-doc-3">
-                                                <div class="border-top px-4 py-3 bg-light bg-opacity-50">
-                                                    <div class="row row-cols-3 g-3 xs-small">
+                                                <div class="border-top px-4 py-3">
+                                                    <div class="row row-cols-3 g-3 xs-text">
                                                         <div>
                                                             <p
-                                                                class="text-gray-5 text-uppercase fw-semibold xxs-small mb-1">
+                                                                class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
                                                                 Cargado por</p>
                                                             <p class="mb-0 d-flex align-items-center gap-1"><i
                                                                     class="bi bi-person"></i> Rodrigo Esteban Muñoz</p>
                                                         </div>
                                                         <div>
                                                             <p
-                                                                class="text-gray-5 text-uppercase fw-semibold xxs-small mb-1">
+                                                                class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
                                                                 Fecha de carga</p>
                                                             <p class="mb-0 d-flex align-items-center gap-1"><i
                                                                     class="bi bi-clock"></i> 05/05/2026 09:45</p>
                                                         </div>
                                                         <div>
                                                             <p
-                                                                class="text-gray-5 text-uppercase fw-semibold xxs-small mb-1">
+                                                                class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
                                                                 IP de carga</p>
                                                             <p class="mb-0 font-monospace">190.24.135.78</p>
                                                         </div>
                                                         <div>
                                                             <p
-                                                                class="text-gray-5 text-uppercase fw-semibold xxs-small mb-1">
+                                                                class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
                                                                 Tipo MIME</p>
                                                             <p class="mb-0 font-monospace">application/pdf</p>
                                                         </div>
                                                         <div>
                                                             <p
-                                                                class="text-gray-5 text-uppercase fw-semibold xxs-small mb-1">
+                                                                class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
                                                                 Tamaño</p>
                                                             <p class="mb-0">180.0 KB</p>
                                                         </div>
                                                         <div>
                                                             <p
-                                                                class="text-gray-5 text-uppercase fw-semibold xxs-small mb-1">
+                                                                class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
                                                                 Tipo adjunto</p>
                                                             <p class="mb-0">Gestión interna</p>
                                                         </div>
@@ -859,29 +840,52 @@
 
                                     <div class="d-flex align-items-start justify-content-between mb-3 gap-2 flex-wrap">
                                         <div>
-                                            <span class="x-small d-flex align-items-center gap-2">
+                                            <span class="x-text d-flex align-items-center gap-2">
                                                 <i class="bi bi-clock-history text-primary"></i> Línea de tiempo del
                                                 caso
                                             </span>
-                                            <p class="xxs-small text-gray-5 mb-0">11 eventos registrados · Solo lectura
+                                            <p class="xxs-text text-gray-5 mb-0">11 eventos registrados · Solo lectura
                                             </p>
                                         </div>
                                         <div class="d-flex align-items-center gap-1 flex-wrap">
-                                            <span class="badge-soft status-radicado">1 creación</span>
-                                            <span class="badge-soft status-radicado">1 asignación</span>
-                                            <span class="badge-soft status-engestion">2 estado</span>
-                                            <span class="badge-soft status-asignado">2 reasignación</span>
-                                            <span class="badge-soft sla-amarillo">1 prioridad</span>
-                                            <span class="badge-soft status-respondido">1 respuesta</span>
-                                            <span class="badge-soft status-cerrado">2 observación</span>
-                                            <span class="badge-soft status-radicado">3 comentario</span>
-                                            <span class="badge-soft hist-adjunto-ini">2 adjunto inicial</span>
-                                            <span class="badge-soft hist-adjunto">3 adjunto cargado</span>
+                                            <span
+                                                class="x-badge-soft xxs-text bg-blue-600 text-white border-blue-600 py-05 px-2">1
+                                                creación</span>
+                                            <span
+                                                class="x-badge-soft xxs-text bg-sky-600 text-white border-sky-600 py-05 px-2">1
+                                                asignación</span>
+                                            <span
+                                                class="x-badge-soft xxs-text bg-violet-600 text-white border-violet-600 py-05 px-2">2
+                                                estado</span>
+                                            <span
+                                                class="x-badge-soft xxs-text bg-purple-600 text-white border-purple-60 py-05 px-2">2
+                                                reasignación</span>
+                                            <span
+                                                class="x-badge-soft xxs-text bg-amber-500 text-white border-amber-500 py-05 px-2">1
+                                                prioidad</span>
+                                            <span
+                                                class="x-badge-soft xxs-text bg-emerald-600 text-white border-emerald-600 py-05 px-2">1
+                                                respuesta</span>
+                                            <span
+                                                class="x-badge-soft xxs-text bg-slate-600 text-white border-slate-600 py-05 px-2">2
+                                                observación</span>
+                                            <span
+                                                class="x-badge-soft xxs-text bg-indigo-600 text-white border-indigo-600 py-05 px-2">3
+                                                comentario</span>
+                                            <span
+                                                class="x-badge-soft xxs-text bg-cyan-600 text-white border-cyan-600 py-05 px-2">2
+                                                adjunto (inicial)</span>
+                                            <span
+                                                class="x-badge-soft xxs-text bg-teal-600 text-white border-teal-600 py-05 px-2">3
+                                                adjunto cargado</span>
+                                            <span
+                                                class="x-badge-soft xxs-text bg-amber-600 text-white border-amber-600 py-05 px-2">1
+                                                modif. cierre</span>
                                         </div>
                                     </div>
 
                                     <div class="d-flex align-items-center gap-2 mb-4 overflow-x-auto pb-1">
-                                        <i class="bi bi-funnel xxs-small text-gray-5 flex-shrink-0"></i>
+                                        <i class="bi bi-funnel xxs-text text-gray-5 flex-shrink-0"></i>
                                         <button class="hist-pill-filtro active" data-filtro="">Todos <span
                                                 class="opacity-75">11</span></button>
                                         <button class="hist-pill-filtro" data-filtro="creacion">Creación <span
@@ -911,193 +915,297 @@
                                         <div class="d-flex gap-3" data-tipo="reasignacion">
                                             <div class="d-flex flex-column align-items-center">
                                                 <div class="hist-evento-icon status-asignado"><i
-                                                        class="bi bi-person-check xxs-small"></i></div>
+                                                        class="bi bi-person-check text"></i></div>
                                                 <div class="hist-linea"></div>
                                             </div>
-                                            <div class="border rounded-3 p-3 mb-3 flex-fill hist-card-reasignacion">
-                                                <div
-                                                    class="d-flex align-items-center justify-content-between mb-2 flex-wrap gap-1">
-                                                    <span class="badge-soft status-asignado">Reasignación de caso</span>
-                                                    <span class="xxs-small text-gray-5">04/05/2026 17:55</span>
+                                            <div
+                                                class="border rounded-3 mb-3 flex-fill overflow-hidden hist-card-reasignacion">
+                                                <div class="p-3">
+                                                    <div
+                                                        class="d-flex align-items-center justify-content-between mb-2 flex-wrap gap-1">
+                                                        <span
+                                                            class="x-badge-soft xxs-text bg-purple-600 text-white border-purple-60 py-05 px-2">Reasignación
+                                                            de caso</span>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <span class="xxs-text text-gray-5">04/05/2026 17:55</span>
+                                                            <button
+                                                                class="btn btn-link p-0 border-0 text-gray-5 flex-shrink-0 collapsed xxs-text bg-transparent"
+                                                                type="button" data-bs-toggle="collapse"
+                                                                data-bs-target="#hist-detail-1" aria-expanded="false">
+                                                                <i class="bi bi-chevron-down"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center gap-2 mb-2 flex-wrap">
+                                                        <div
+                                                            class="d-flex align-items-center gap-2 bg-white border border-purple-200 rounded-4 px-2 py-1">
+                                                            <div class="d-flex rounded-full bg-purple-200 flex rounded-4 text-center bg-purple-200 align-items-center justify-content-center"
+                                                                style="width:1rem;height:1rem">
+                                                                <span class="text-purple-700 xxxs-text">J</span>
+                                                            </div>
+                                                            <span
+                                                                class="text-decoration-line-through text-gray-5 xs-text">Jorge
+                                                                Iván Castillo</span>
+                                                        </div>
+                                                        <i class="bi bi-arrow-right"></i>
+                                                        <div
+                                                            class="d-flex items-center gap-2 bg-purple-100 border border-purple-300 rounded-4 px-2 py-1">
+                                                            <div class="d-flex rounded-full bg-purple-200 flex rounded-4 text-center bg-purple-200 align-items-center justify-content-center"
+                                                                style="width:1rem;height:1rem">
+                                                                <span class="text-purple-700 xxxs-text">J</span>
+                                                            </div>
+                                                            <span class="text-purple-800 xs-text">Rodrigo Esteban
+                                                                Muñoz</span>
+                                                        </div>
+                                                    </div>
+                                                    <p class="xs-text mb-2"><span
+                                                            class="fw-semibold text-purple-700">Comentario:</span>
+                                                        Reasignado al especialista de pagos electrónicos por tratarse de
+                                                        un caso PSE crítico.</p>
+                                                    <p class="xxs-text text-gray-7 mb-0">Ricardo Peña Montoya · <span
+                                                            class="opacity-50">Supervisor</span></p>
                                                 </div>
-                                                <div class="d-flex align-items-center gap-2 mb-2 flex-wrap">
-                                                    <span class="badge-soft status-cerrado">J Jorge Iván Castillo</span>
-                                                    <i class="bi bi-arrow-right xxs-small text-gray-5"></i>
-                                                    <span class="badge-soft status-asignado">R Rodrigo Esteban
-                                                        Muñoz</span>
+
+                                                <div class="collapse" id="hist-detail-1">
+                                                    <div class="border-top py-3 mx-3">
+                                                        <div class="d-flex flex-column gap-1 xs-text">
+                                                            <div class="row">
+                                                                <span class="col-4 text-gray-5">Tipo de evento:</span>
+                                                                <span class="col-8">Reasignación de caso</span>
+                                                            </div>
+                                                            <div class="row">
+                                                                <span class="col-4 text-gray-5">Responsable
+                                                                    anterior:</span>
+                                                                <span class="col-8">Jorge Iván Castillo</span>
+                                                            </div>
+                                                            <div class="row">
+                                                                <span class="col-4 text-gray-5">Responsable
+                                                                    nuevo:</span>
+                                                                <span class="col-8">Rodrigo Esteban Muñoz</span>
+                                                            </div>
+                                                            <div class="row">
+                                                                <span class="col-4 text-gray-5">Reasignado por:</span>
+                                                                <span class="col-8">Ricardo Peña Montoya · <span
+                                                                        class="text-gray-5">Supervisor</span></span>
+                                                            </div>
+                                                            <div class="row">
+                                                                <span class="col-4 text-gray-5">Fecha y hora:</span>
+                                                                <span class="col-8 font-monospace">04/05/2026
+                                                                    17:55</span>
+                                                            </div>
+                                                            <div class="row">
+                                                                <span class="col-4 text-gray-5">Comentario:</span>
+                                                                <span class="col-8">Reasignado al especialista de pagos
+                                                                    electrónicos por tratarse de un caso PSE
+                                                                    crítico.</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <p class="xs-small mb-1"><span
-                                                        class="fw-semibold text-primary">Comentario:</span> Reasignado
-                                                    al especialista de pagos electrónicos por tratarse de un caso PSE
-                                                    crítico.</p>
-                                                <p class="xxs-small text-gray-5 mb-0">Ricardo Peña Montoya · Supervisor
-                                                </p>
                                             </div>
                                         </div>
 
                                         <div class="d-flex gap-3" data-tipo="creacion">
                                             <div class="d-flex flex-column align-items-center">
                                                 <div class="hist-evento-icon status-radicado"><i
-                                                        class="bi bi-plus-circle xxs-small"></i></div>
+                                                        class="bi bi-plus-circle text"></i></div>
                                                 <div class="hist-linea"></div>
                                             </div>
-                                            <div class="border rounded-3 p-3 mb-3 flex-fill hist-card-creacion">
-                                                <div class="d-flex align-items-center justify-content-between mb-2">
-                                                    <span class="badge-soft status-radicado">Caso creado</span>
-                                                    <span class="xxs-small text-gray-5">04/05/2026 18:00</span>
+                                            <div
+                                                class="border rounded-3 mb-3 flex-fill overflow-hidden bg-blue-50 border-blue-200">
+                                                <div class="p-3">
+                                                    <divclass="d-flex align-items-center justify-content-between mb-3
+                                                        flex-wrap gap-1">
+                                                        <span
+                                                            class="x-badge-soft xxs-text bg-blue-600 text-white py-05 px-2">
+                                                            Caso creado</span>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <span class="xxs-text text-gray-5">04/05/2026 18:00</span>
+                                                            <button
+                                                                class="btn btn-link p-0 border-0 text-gray-5 flex-shrink-0 collapsed xxs-text bg-transparent"
+                                                                type="button" data-bs-toggle="collapse"
+                                                                data-bs-target="#hist-detail-2" aria-expanded="false">
+                                                                <i class="bi bi-chevron-down"></i>
+                                                            </button>
+                                                        </div>
                                                 </div>
-                                                <p class="xs-small mb-1">Caso radicado por el asociado a través del
-                                                    canal App Móvil. Pago PSE por $2.350.000 al banco Davivienda no fue
-                                                    acreditado. Código de transacción: PSE-20260503-8847.</p>
-                                                <p class="xxs-small text-gray-5 mb-0">Valentina Ospina Ríos · Operador
+                                                <p class="xs-text mb-3">Caso radicado por el asociado a través del
+                                                    canal App Móvil. Pago PSE por $2.350.000 al banco Davivienda no
+                                                    fue acreditado. Código de transacción: PSE-20260503-8847.</p>
+                                                <p class="xxs-text text-gray-7 mb-0">Valentina Ospina Ríos · <span
+                                                        class="opacity-50">Operador</span>
                                                 </p>
-                                            </div>
-                                        </div>
 
-                                        <div class="d-flex gap-3" data-tipo="estado">
-                                            <div class="d-flex flex-column align-items-center">
-                                                <div class="hist-evento-icon status-engestion"><i
-                                                        class="bi bi-arrow-left-right xxs-small"></i></div>
-                                                <div class="hist-linea"></div>
                                             </div>
-                                            <div class="border rounded-3 p-3 mb-3 flex-fill hist-card-estado">
-                                                <div
-                                                    class="d-flex align-items-center justify-content-between mb-2 flex-wrap gap-1">
-                                                    <div class="d-flex align-items-center gap-2 flex-wrap">
-                                                        <span class="badge-soft status-engestion">Cambio de
-                                                            estado</span>
-                                                        <span class="badge-soft status-cerrado">Radicado</span>
-                                                        <i class="bi bi-arrow-right xxs-small text-gray-5"></i>
-                                                        <span class="badge-soft status-radicado">Asignado</span>
+
+                                            <div class="collapse" id="hist-detail-2">
+                                                <div class="border-top px-3 py-3">
+                                                    <div class="d-flex flex-column gap-1 xs-text">
+                                                        <div class="row">
+                                                            <span class="col-4 text-gray-5">Tipo de evento:</span>
+                                                            <span class="col-8">Creación del caso</span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span class="col-4 text-gray-5">Estado inicial:</span>
+                                                            <span class="col-8"><span
+                                                                    class="badge-soft status-radicado">Radicado</span></span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span class="col-4 text-gray-5">Responsable
+                                                                inicial:</span>
+                                                            <span class="col-8">Jorge Iván Castillo</span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <span class="col-4 text-gray-5">Registrado por:</span>
+                                                            <span class="col-8">Valentina Ospina Ríos · <span
+                                                                    class="text-gray-5">Operador</span></span>
+                                                        </div>
                                                     </div>
-                                                    <span class="xxs-small text-gray-5">04/05/2026 18:01</span>
                                                 </div>
-                                                <p class="xs-small mb-1">Caso crítico PSE. Asignado con prioridad
-                                                    máxima.</p>
-                                                <p class="xxs-small text-gray-5 mb-0">Jorge Iván Castillo · Operador</p>
                                             </div>
                                         </div>
-
-                                        <div class="d-flex gap-3" data-tipo="prioridad">
-                                            <div class="d-flex flex-column align-items-center">
-                                                <div class="hist-evento-icon sla-amarillo"><i
-                                                        class="bi bi-arrow-up-circle xxs-small"></i></div>
-                                                <div class="hist-linea"></div>
-                                            </div>
-                                            <div class="border rounded-3 p-3 mb-3 flex-fill hist-card-prioridad">
-                                                <div
-                                                    class="d-flex align-items-center justify-content-between mb-2 flex-wrap gap-1">
-                                                    <div class="d-flex align-items-center gap-2 flex-wrap">
-                                                        <span class="badge-soft sla-amarillo">Escalación de
-                                                            prioridad</span>
-                                                        <span class="badge-soft priority-normal">Normal</span>
-                                                        <i class="bi bi-arrow-right xxs-small text-gray-5"></i>
-                                                        <span class="badge-soft priority-critica">Crítica</span>
-                                                    </div>
-                                                    <span class="xxs-small text-gray-5">04/05/2026 18:15</span>
-                                                </div>
-                                                <p class="xxs-small text-gray-5 mb-1">SLA: <span
-                                                        class="text-decoration-line-through">24h</span> → <span
-                                                        class="fw-semibold">4h</span></p>
-                                                <p class="xs-small mb-1">Caso escalado a crítico por impacto financiero
-                                                    alto. Monto involucrado supera $2M.</p>
-                                                <p class="xxs-small text-gray-5 mb-0">Jorge Iván Castillo · Operador</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="d-flex gap-3" data-tipo="estado">
-                                            <div class="d-flex flex-column align-items-center">
-                                                <div class="hist-evento-icon status-engestion"><i
-                                                        class="bi bi-arrow-left-right xxs-small"></i></div>
-                                                <div class="hist-linea"></div>
-                                            </div>
-                                            <div class="border rounded-3 p-3 mb-3 flex-fill hist-card-estado">
-                                                <div
-                                                    class="d-flex align-items-center justify-content-between mb-2 flex-wrap gap-1">
-                                                    <div class="d-flex align-items-center gap-2 flex-wrap">
-                                                        <span class="badge-soft status-engestion">Cambio de
-                                                            estado</span>
-                                                        <span class="badge-soft status-radicado">Asignado</span>
-                                                        <i class="bi bi-arrow-right xxs-small text-gray-5"></i>
-                                                        <span class="badge-soft status-engestion">En Gestión</span>
-                                                    </div>
-                                                    <span class="xxs-small text-gray-5">04/05/2026 18:30</span>
-                                                </div>
-                                                <p class="xs-small mb-1">Contactando a pasarela PSE para verificar el
-                                                    estado de la transacción.</p>
-                                                <p class="xxs-small text-gray-5 mb-0">Jorge Iván Castillo · Operador</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="d-flex gap-3" data-tipo="observacion">
-                                            <div class="d-flex flex-column align-items-center">
-                                                <div class="hist-evento-icon status-cerrado"><i
-                                                        class="bi bi-eye xxs-small"></i></div>
-                                                <div class="hist-linea"></div>
-                                            </div>
-                                            <div class="border rounded-3 p-3 mb-3 flex-fill hist-card-observacion">
-                                                <div
-                                                    class="d-flex align-items-center justify-content-between mb-2 flex-wrap gap-1">
-                                                    <div class="d-flex align-items-center gap-2">
-                                                        <span class="badge-soft status-cerrado">Observación
-                                                            interna</span>
-                                                        <span class="badge-soft status-cerrado">Solo visible para
-                                                            operadores</span>
-                                                    </div>
-                                                    <span class="xxs-small text-gray-5">04/05/2026 18:45</span>
-                                                </div>
-                                                <p class="xs-small mb-1">Se verificó en el sistema core que el débito
-                                                    fue aplicado correctamente en la cuenta del asociado. El problema
-                                                    está en la acreditación en el banco destino.</p>
-                                                <p class="xxs-small text-primary mb-1" role="button">Ver más</p>
-                                                <p class="xxs-small text-gray-5 mb-0">Jorge Iván Castillo · Operador</p>
-                                            </div>
-                                        </div>
-
                                     </div>
 
-                                    <div
-                                        class="d-flex align-items-center gap-2 rounded-3 px-3 py-2 bg-light bg-opacity-75 mt-2">
-                                        <i class="bi bi-info-circle xxs-small text-gray-5 flex-shrink-0"></i>
-                                        <p class="xxs-small text-gray-5 mb-0">La línea de tiempo es de solo lectura. Se
-                                            actualiza automáticamente con cada acción registrada en el caso.</p>
+                                    <div class="d-flex gap-3" data-tipo="estado">
+                                        <div class="d-flex flex-column align-items-center">
+                                            <div class="hist-evento-icon status-engestion"><i
+                                                    class="bi bi-arrow-left-right xxs-text"></i></div>
+                                            <div class="hist-linea"></div>
+                                        </div>
+                                        <div class="border rounded-3 p-3 mb-3 flex-fill hist-card-estado">
+                                            <div
+                                                class="d-flex align-items-center justify-content-between mb-2 flex-wrap gap-1">
+                                                <div class="d-flex align-items-center gap-2 flex-wrap">
+                                                    <span class="badge-soft status-engestion">Cambio de
+                                                        estado</span>
+                                                    <span class="badge-soft status-cerrado">Radicado</span>
+                                                    <i class="bi bi-arrow-right xxs-text text-gray-5"></i>
+                                                    <span class="badge-soft status-radicado">Asignado</span>
+                                                </div>
+                                                <span class="xxs-text text-gray-5">04/05/2026 18:01</span>
+                                            </div>
+                                            <p class="xs-text mb-1">Caso crítico PSE. Asignado con prioridad
+                                                máxima.</p>
+                                            <p class="xxs-text text-gray-5 mb-0">Jorge Iván Castillo · Operador</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex gap-3" data-tipo="prioridad">
+                                        <div class="d-flex flex-column align-items-center">
+                                            <div class="hist-evento-icon sla-amarillo"><i
+                                                    class="bi bi-arrow-up-circle xxs-text"></i></div>
+                                            <div class="hist-linea"></div>
+                                        </div>
+                                        <div class="border rounded-3 p-3 mb-3 flex-fill hist-card-prioridad">
+                                            <div
+                                                class="d-flex align-items-center justify-content-between mb-2 flex-wrap gap-1">
+                                                <div class="d-flex align-items-center gap-2 flex-wrap">
+                                                    <span class="badge-soft sla-amarillo">Escalación de
+                                                        prioridad</span>
+                                                    <span class="badge-soft priority-normal">Normal</span>
+                                                    <i class="bi bi-arrow-right xxs-text text-gray-5"></i>
+                                                    <span class="badge-soft priority-critica">Crítica</span>
+                                                </div>
+                                                <span class="xxs-text text-gray-5">04/05/2026 18:15</span>
+                                            </div>
+                                            <p class="xxs-text text-gray-5 mb-1">SLA: <span
+                                                    class="text-decoration-line-through">24h</span> → <span
+                                                    class="fw-semibold">4h</span></p>
+                                            <p class="xs-text mb-1">Caso escalado a crítico por impacto financiero
+                                                alto. Monto involucrado supera $2M.</p>
+                                            <p class="xxs-text text-gray-5 mb-0">Jorge Iván Castillo · Operador</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex gap-3" data-tipo="estado">
+                                        <div class="d-flex flex-column align-items-center">
+                                            <div class="hist-evento-icon status-engestion"><i
+                                                    class="bi bi-arrow-left-right xxs-text"></i></div>
+                                            <div class="hist-linea"></div>
+                                        </div>
+                                        <div class="border rounded-3 p-3 mb-3 flex-fill hist-card-estado">
+                                            <div
+                                                class="d-flex align-items-center justify-content-between mb-2 flex-wrap gap-1">
+                                                <div class="d-flex align-items-center gap-2 flex-wrap">
+                                                    <span class="badge-soft status-engestion">Cambio de
+                                                        estado</span>
+                                                    <span class="badge-soft status-radicado">Asignado</span>
+                                                    <i class="bi bi-arrow-right xxs-text text-gray-5"></i>
+                                                    <span class="badge-soft status-engestion">En Gestión</span>
+                                                </div>
+                                                <span class="xxs-text text-gray-5">04/05/2026 18:30</span>
+                                            </div>
+                                            <p class="xs-text mb-1">Contactando a pasarela PSE para verificar el
+                                                estado de la transacción.</p>
+                                            <p class="xxs-text text-gray-5 mb-0">Jorge Iván Castillo · Operador</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex gap-3" data-tipo="observacion">
+                                        <div class="d-flex flex-column align-items-center">
+                                            <div class="hist-evento-icon status-cerrado"><i
+                                                    class="bi bi-eye xxs-text"></i></div>
+                                            <div class="hist-linea"></div>
+                                        </div>
+                                        <div class="border rounded-3 p-3 mb-3 flex-fill hist-card-observacion">
+                                            <div
+                                                class="d-flex align-items-center justify-content-between mb-2 flex-wrap gap-1">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <span class="badge-soft status-cerrado">Observación
+                                                        interna</span>
+                                                    <span class="badge-soft status-cerrado">Solo visible para
+                                                        operadores</span>
+                                                </div>
+                                                <span class="xxs-text text-gray-5">04/05/2026 18:45</span>
+                                            </div>
+                                            <p class="xs-text mb-1">Se verificó en el sistema core que el débito
+                                                fue aplicado correctamente en la cuenta del asociado. El problema
+                                                está en la acreditación en el banco destino.</p>
+                                            <p class="xxs-text text-primary mb-1" role="button">Ver más</p>
+                                            <p class="xxs-text text-gray-5 mb-0">Jorge Iván Castillo · Operador</p>
+                                        </div>
                                     </div>
 
                                 </div>
-                                <!-- RESPUESTAS -->
-                                <div class="tab-pane fade" id="pane-resp" role="tabpanel">
-                                    <div class="d-flex align-items-center justify-content-between mb-3">
-                                        <span class="x-small">Respuestas al asociado</span>
-                                        <button
-                                            class="btn btn-primary btn-sm rounded-3 d-flex align-items-center gap-2">
-                                            <i class="bi bi-reply"></i> Nueva respuesta
-                                        </button>
-                                    </div>
-                                    <div class="d-flex flex-column gap-3">
-                                        <div class="border rounded-3 p-3 bg-primary bg-opacity-10">
-                                            <div class="d-flex align-items-center justify-content-between mb-2">
-                                                <div class="d-flex align-items-center gap-2">
-                                                    <span class="xs-small fw-medium text-primary">Respuesta
-                                                        oficial</span>
-                                                    <span class="badge-soft badge-soft-success xs-small"><i
-                                                            class="bi bi-send me-1"></i>Enviada</span>
-                                                </div>
-                                                <span class="xxs-small text-secondary">04/05/2026 20:20</span>
-                                            </div>
-                                            <p class="xs-small mb-1">Estimado asociado, hemos recibido su caso y estamos
-                                                gestionando la verificación del pago PSE con la pasarela
-                                                correspondiente. Le informaremos en un plazo máximo de 24 horas.</p>
-                                            <p class="xxs-small text-secondary mb-0">Enviado por Jorge Iván Castillo ·
-                                                Canal: Correo electrónico</p>
-                                        </div>
-                                    </div>
+
+                                <div
+                                    class="d-flex align-items-center gap-3 rounded-3 px-3 py-2 bg-light bg-opacity-75 mt-2">
+                                    <i class="bi bi-info-circle xxs-text text-gray-5 flex-shrink-0"></i>
+                                    <p class="xxs-text text-gray-5 mb-0">La línea de tiempo es de solo lectura. Se
+                                        actualiza automáticamente con cada acción registrada en el caso.</p>
                                 </div>
 
                             </div>
+                            <!-- RESPUESTAS -->
+                            <div class="tab-pane fade" id="pane-resp" role="tabpanel">
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <span class="x-text">Respuestas al asociado</span>
+                                    <button class="btn btn-primary btn-sm rounded-3 d-flex align-items-center gap-2">
+                                        <i class="bi bi-reply"></i> Nueva respuesta
+                                    </button>
+                                </div>
+                                <div class="d-flex flex-column gap-3">
+                                    <div class="border rounded-3 p-3 bg-primary bg-opacity-10">
+                                        <div class="d-flex align-items-center justify-content-between mb-2">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <span class="xs-text fw-medium text-primary">Respuesta
+                                                    oficial</span>
+                                                <span class="badge-soft badge-soft-success xs-text"><i
+                                                        class="bi bi-send me-1"></i>Enviada</span>
+                                            </div>
+                                            <span class="xxs-text text-secondary">04/05/2026 20:20</span>
+                                        </div>
+                                        <p class="xs-text mb-1">Estimado asociado, hemos recibido su caso y estamos
+                                            gestionando la verificación del pago PSE con la pasarela
+                                            correspondiente. Le informaremos en un plazo máximo de 24 horas.</p>
+                                        <p class="xxs-text text-secondary mb-0">Enviado por Jorge Iván Castillo ·
+                                            Canal: Correo electrónico</p>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-
                     </div>
-
                     <div class="col-12 col-xl-4 d-flex flex-column gap-3">
 
                         <div class="card border rounded-3 shadow-sm bg-white">
@@ -1105,20 +1213,20 @@
                                 <p class="detail-label mb-3">Estado actual</p>
                                 <div class="d-flex flex-column gap-3">
                                     <div class="d-flex align-items-center justify-content-between">
-                                        <span class="xs-small text-secondary">Estado</span>
+                                        <span class="xs-text text-secondary">Estado</span>
                                         <span class="badge-soft badge-soft-yellow">Pendiente de Información</span>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-between">
-                                        <span class="xs-small text-secondary">Prioridad</span>
-                                        <span class="badge-soft badge-soft-danger">Crítica</span>
+                                        <span class="xs-text text-secondary">Prioridad</span>
+                                        <span class="badge-soft priority-critica">Crítica</span>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-between">
-                                        <span class="xs-small text-secondary">Responsable</span>
-                                        <span class="xs-small text-end">Rodrigo Esteban Muñoz</span>
+                                        <span class="xs-text text-secondary">Responsable</span>
+                                        <span class="xs-text text-end">Rodrigo Esteban Muñoz</span>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-between">
-                                        <span class="xs-small text-secondary">SLA</span>
-                                        <span class="xs-small">4h</span>
+                                        <span class="xs-text text-secondary">SLA</span>
+                                        <span class="xs-text">4h</span>
                                     </div>
                                 </div>
                             </div>
@@ -1126,7 +1234,7 @@
 
                         <div class="card border rounded-3 shadow-sm bg-white">
                             <div class="card-body p-4">
-                                <p class="x-small mb-3 d-flex align-items-center gap-2">
+                                <p class="x-text mb-3 d-flex align-items-center gap-2">
                                     <i class="bi bi-gear text-primary"></i> Cambiar estado
                                 </p>
                                 <select class="form-select form-select-sm rounded-3">
@@ -1141,10 +1249,10 @@
 
                         <div class="card border rounded-3 shadow-sm bg-white">
                             <div class="card-body p-4">
-                                <p class="x-small mb-1 d-flex align-items-center gap-2">
+                                <p class="x-text mb-1 d-flex align-items-center gap-2">
                                     <i class="bi bi-exclamation-triangle text-warning"></i> Cambiar prioridad
                                 </p>
-                                <p class="xs-small text-secondary mb-3">Solo se muestran las prioridades permitidas para
+                                <p class="xs-text text-secondary mb-3">Solo se muestran las prioridades permitidas para
                                     esta categoría. El SLA se recalculará automáticamente.</p>
                                 <select class="form-select form-select-sm rounded-3 border-warning text-warning">
                                     <option selected>Crítica</option>
@@ -1157,10 +1265,10 @@
 
                         <div class="card border rounded-3 shadow-sm bg-white">
                             <div class="card-body p-4">
-                                <p class="x-small mb-1 d-flex align-items-center gap-2">
+                                <p class="x-text mb-1 d-flex align-items-center gap-2">
                                     <i class="bi bi-person-check text-primary"></i> Reasignar caso
                                 </p>
-                                <p class="xs-small text-secondary mb-3">Transfiera este caso a otro operador. El cambio
+                                <p class="xs-text text-secondary mb-3">Transfiera este caso a otro operador. El cambio
                                     quedará registrado en la trazabilidad.</p>
                                 <button
                                     class="btn btn-sm w-100 d-flex align-items-center justify-content-between rounded-3 bg-white border"
@@ -1173,7 +1281,7 @@
 
                         <div class="card border rounded-3 shadow-sm bg-white">
                             <div class="card-body p-4">
-                                <p class="x-small mb-3 d-flex align-items-center gap-2">
+                                <p class="x-text mb-3 d-flex align-items-center gap-2">
                                     <i class="bi bi-chat-square text-primary"></i> Registrar observación
                                 </p>
                                 <textarea rows="3" class="form-control form-control-sm rounded-3 mb-2"
@@ -1192,11 +1300,11 @@
                                 <p class="detail-label mb-3">Acciones finales</p>
                                 <div class="d-flex flex-column gap-2">
                                     <button
-                                        class="btn btn-success btn-sm w-100 d-flex align-items-center gap-2 rounded-3">
+                                        class="btn btn-success btn-sm w-100 d-flex align-items-center gap-3 rounded-3">
                                         <i class="bi bi-lock"></i> Cerrar caso
                                     </button>
                                     <button
-                                        class="btn btn-sm w-100 d-flex align-items-center gap-2 rounded-3 bg-white border-danger text-danger">
+                                        class="btn btn-sm w-100 d-flex align-items-center gap-3 rounded-3 bg-white border-danger text-danger">
                                         <i class="bi bi-x-circle"></i> Anular caso
                                     </button>
                                 </div>
@@ -1205,15 +1313,16 @@
 
                     </div>
                 </div>
+
+
             </div>
-        </main>
+    </div>
+    </main>
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/pages/case-detail.js"></script>
-
 </body>
-
 </html>

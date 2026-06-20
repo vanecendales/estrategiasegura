@@ -1,15 +1,24 @@
-.detail-label {
+.tabla-body .detail-label {
     font-size: var(--bs-font-xxs)!important;
+}
+.card-body .detail-label {
+    font-size: var(--bs-font-xxs)!important;
+}
+.detail-label {
     font-weight: 400;
     text-transform: uppercase;
     color: var(--bs-secondary-color);
     margin-bottom: .25rem;
 }
- 
+
 .detail-value {
      font-size: 0.9rem;
     color: var(--bs-body-color);
     margin-bottom: 0;
+}
+
+li.nav-item > button > span {
+    line-height: 0rem;
 }
 /* ==========================================================
    HISTORIAL
@@ -36,8 +45,8 @@
 }
 
 .hist-pill-filtro {
-  font-size: var(--bs-font-xxs);
-  font-weight: 600;
+  font-size: var(--bs-font-11);
+  font-weight: 400;
   padding: .2rem .65rem;
   border-radius: 999px;
   border: 1px solid var(--bs-border-color);
@@ -58,7 +67,7 @@
 .hist-adjunto-ini { color: var(--hist-adjunto-ini); background-color: var(--hist-adjunto-ini-bg); }
 .hist-adjunto     { color: var(--hist-adjunto);     background-color: var(--hist-adjunto-bg); }
 
-.hist-card-reasignacion { background-color: var(--status-asignado-bg);   border-color: var(--status-asignado-bg) !important; }
+.hist-card-reasignacion { background-color: var(--status-asignado-bg);   border-color: #e9d5ff !important; }
 .hist-card-creacion     { background-color: var(--status-radicado-bg);   border-color: var(--status-radicado-bg) !important; }
 .hist-card-estado       { background-color: var(--status-engestion-bg);  border-color: var(--status-engestion-bg) !important; }
 .hist-card-prioridad    { background-color: var(--sla-amarillo-bg);      border-color: var(--sla-amarillo-bg) !important; }
@@ -67,3 +76,10 @@
 .hist-card-respuesta    { background-color: var(--status-respondido-bg); border-color: var(--status-respondido-bg) !important; }
 .hist-card-adjunto-ini  { background-color: var(--hist-adjunto-ini-bg);  border-color: var(--hist-adjunto-ini-bg) !important; }
 .hist-card-adjunto      { background-color: var(--hist-adjunto-bg);      border-color: var(--hist-adjunto-bg) !important; }
+
+
+.priority-critica {
+    color: var(--priority-critica);
+    background-color: var(--priority-critica-bg);
+}
+
