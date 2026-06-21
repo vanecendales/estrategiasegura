@@ -13,55 +13,53 @@
 
 <body class="bg-light">
 
-    <header class="sidebar text-white shadow-sm ">
+    <header class="sidebar text-white shadow-sm">
         <div class="container-lg px-4 py-3 d-flex align-items-center justify-content-between max-w-cont">
             <div class="d-flex align-items-center gap-3">
                 <img src="../assets/images/logo.webp" height="32" width="32" alt="Logo" class="flex-shrink-0">
                 <div>
-                    <div class="fs-6">GestorFPQRS</div>
+                    <div class="fs-6 mb-1">GestorFPQRS</div>
                     <div class="xs-text text-white-60">CoopFinanzas — Portal de Atención al Asociado</div>
                 </div>
             </div>
-            <div class="d-none d-sm-flex align-items-center gap-2 xs-text text-white-70">
-                <span class="rounded-circle bg-green-400 sla-dot" style="width:.5rem; height:.5rem;" ></span>
+            <div class="d-none d-sm-flex align-items-center gap-1 xs-text text-white-70">
+                <span class="rounded-circle bg-green-400 sla-dot" style="width:.5rem; height:.5rem;"></span>
                 Servicio disponible
             </div>
         </div>
     </header>
 
-    <div class="container-lg px-4 py-5 max-w-cont">
+    <div class="container-lg px-4 py-4 max-w-cont">
 
         <div class="mb-4">
-            <h1 class="fs-4 fw-bold mb-1">Registrar caso FPQRS</h1>
+            <h1 class="fs-4 mb-1 fw-light mb-2">Registrar caso FPQRS</h1>
             <p class="text text-gray-5 mb-0">Diligencie el formulario para radicar su Felicitación, Petición, Queja, Reclamo o Sugerencia. Los campos marcados con <span class="text-danger fw-semibold">*</span> son obligatorios.</p>
         </div>
 
-        <div class="d-flex align-items-start gap-3 bg-blue-50 border border-blue-200 rounded-3 px-4 py-3 mb-4">
-            <i class="bi bi-info-circle text-blue-600 flex-shrink-0 mt-1"></i>
+        <div class="d-flex align-items-start gap-3 bg-blue-50 border border-blue-200 rounded-3 px-3 py-25 mb-4">
+            <i class="bi bi-info-circle text-blue-600 fs-6 flex-shrink-0 mt-1"></i>
             <div>
-                <p class="xs-text fw-semibold text-blue-800 mb-0">Información importante</p>
-                <p class="xxs-text text-blue-700 mb-0 mt-1">Al enviar este formulario, su caso será radicado y recibirá un número de seguimiento. Nuestro equipo le contactará según los tiempos de respuesta establecidos por la Superintendencia Financiera de Colombia.</p>
+                <p class="text text-blue-800 mb-0">Información importante</p>
+                <p class="xs-text text-blue-700 mb-0">Al enviar este formulario, su caso será radicado y recibirá un número de seguimiento. Nuestro equipo le contactará según los tiempos de respuesta establecidos por la Superintendencia Financiera de Colombia.</p>
             </div>
         </div>
 
         <div class="d-flex flex-column gap-4">
 
             <!-- Datos personales -->
-            <div class="card border rounded-4 shadow-sm overflow-hidden">
+            <div class="card border rounded-4 bg-white shadow-sm overflow-hidden">
                 <div class="px-4 py-3 border-bottom d-flex align-items-center gap-3">
-                    <div class="rounded-3 d-flex align-items-center justify-content-center flex-shrink-0 bg-primary bg-opacity-10" style="width:36px;height:36px;">
-                        <i class="bi bi-person text-primary"></i>
-                    </div>
+                    <i class="bi bi-person text-primary fs-6"></i>
                     <div>
-                        <h2 class="xs-text fw-bold mb-0">Datos personales</h2>
-                        <p class="xxs-text text-gray-5 mb-0">Información del asociado que registra el caso</p>
+                        <h2 class="fs-6 fw-normal mb-1">Datos personales</h2>
+                        <p class="xs-text text-gray-5 mb-0">Información del asociado que registra el caso</p>
                     </div>
                 </div>
                 <div class="px-4 py-4">
                     <div class="row g-4">
                         <div class="col-12 col-sm-6">
-                            <label class="xxs-text fw-semibold text-uppercase text-gray-5 mb-1">Tipo de identificación <span class="text-danger">*</span></label>
-                            <select class="form-select form-select-sm rounded-3" name="idTipoIdentificacion">
+                            <label class="text mb-1">Tipo de identificación <span class="text-danger">*</span></label>
+                            <select class="form-select rounded-3" name="idTipoIdentificacion">
                                 <option value="">Seleccionar...</option>
                                 <option value="ti-01">Cédula de Ciudadanía</option>
                                 <option value="ti-02">Cédula de Extranjería</option>
@@ -70,47 +68,47 @@
                             </select>
                         </div>
                         <div class="col-12 col-sm-6">
-                            <label class="xxs-text fw-semibold text-uppercase text-gray-5 mb-1">Número de identificación <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control form-control-sm rounded-3 font-monospace" placeholder="Ej: 1082456789" name="identificacion">
+                            <label class="text mb-1">Número de identificación <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control font-monospace" placeholder="Ej: 1082456789" name="identificacion">
                         </div>
                         <div class="col-12">
-                            <label class="xxs-text fw-semibold text-uppercase text-gray-5 mb-1">Nombre completo <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control form-control-sm rounded-3" placeholder="Nombres y apellidos completos" name="nombreCompleto">
+                            <label class="text mb-1">Nombre completo <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" placeholder="Nombres y apellidos completos" name="nombreCompleto">
                         </div>
                         <div class="col-12 col-sm-6">
-                            <label class="xxs-text fw-semibold text-uppercase text-gray-5 mb-1">Correo electrónico <span class="text-danger">*</span></label>
-                            <p class="xxs-text text-gray-5 mb-1">Le enviaremos confirmación y actualizaciones a este correo</p>
-                            <input type="email" class="form-control form-control-sm rounded-3" placeholder="correo@ejemplo.com" name="correo">
+                            <label class="text mb-1">Correo electrónico <span class="text-danger">*</span></label>
+                            <p class="xs-text text-gray-5 mb-1">Le enviaremos confirmación y actualizaciones a este correo</p>
+                            <input type="email" class="form-control" placeholder="correo@ejemplo.com" name="correo">
                         </div>
                         <div class="col-12 col-sm-6">
-                            <label class="xxs-text fw-semibold text-uppercase text-gray-5 mb-1">Número de celular <span class="text-danger">*</span></label>
-                            <input type="tel" class="form-control form-control-sm rounded-3 font-monospace" placeholder="3XXXXXXXXX" name="celular">
+                            <label class="text mb-1">Número de celular <span class="text-danger">*</span></label>
+                            <input type="tel" class="form-control font-monospace" placeholder="3XXXXXXXXX" name="celular">
                         </div>
                         <div class="col-12">
-                            <label class="xxs-text fw-semibold text-uppercase text-gray-5 mb-1">Dirección de residencia</label>
-                            <input type="text" class="form-control form-control-sm rounded-3" placeholder="Calle, carrera, número, ciudad" name="direccion">
+                            <label class="text mb-1">Dirección de residencia</label>
+                            <input type="text" class="form-control" placeholder="Calle, carrera, número, ciudad" name="direccion">
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Datos del caso -->
-            <div class="card border rounded-4 shadow-sm overflow-hidden">
+            <div class="card border bg-white rounded-4 shadow-sm overflow-hidden">
                 <div class="px-4 py-3 border-bottom d-flex align-items-center gap-3">
-                    <div class="rounded-3 d-flex align-items-center justify-content-center flex-shrink-0 bg-primary bg-opacity-10" style="width:36px;height:36px;">
+                    <div class="text">
                         <i class="bi bi-briefcase text-primary"></i>
                     </div>
                     <div>
-                        <h2 class="xs-text fw-bold mb-0">Datos del caso</h2>
-                        <p class="xxs-text text-gray-5 mb-0">Describa detalladamente su solicitud para una atención más ágil</p>
+                        <h2 class="fs-6 fw-normal mb-1">Datos del caso</h2>
+                        <p class="xs-text text-gray-5 mb-0">Describa detalladamente su solicitud para una atención más ágil</p>
                     </div>
                 </div>
                 <div class="px-4 py-4">
                     <div class="row g-4">
                         <div class="col-12 col-sm-6">
-                            <label class="xxs-text fw-semibold text-uppercase text-gray-5 mb-1">Tipo de caso <span class="text-danger">*</span></label>
-                            <p class="xxs-text text-gray-5 mb-1">¿Qué tipo de comunicación desea radicar?</p>
-                            <select class="form-select form-select-sm rounded-3" name="idTipoCaso">
+                            <label class="text mb-1">Tipo de caso <span class="text-danger">*</span></label>
+                            <p class="xs-text text-gray-5 mb-1">¿Qué tipo de comunicación desea radicar?</p>
+                            <select class="form-select rounded-3" name="idTipoCaso">
                                 <option value="">Seleccionar tipo de caso...</option>
                                 <option value="tc-01">Felicitación</option>
                                 <option value="tc-02">Petición</option>
@@ -120,9 +118,9 @@
                             </select>
                         </div>
                         <div class="col-12 col-sm-6">
-                            <label class="xxs-text fw-semibold text-uppercase text-gray-5 mb-1">Servicio <span class="text-danger">*</span></label>
-                            <p class="xxs-text text-gray-5 mb-1">¿Sobre qué servicio de la cooperativa es su caso?</p>
-                            <select class="form-select form-select-sm rounded-3" name="idServicio">
+                            <label class="text mb-1">Servicio <span class="text-danger">*</span></label>
+                            <p class="xs-text text-gray-5 mb-1">¿Sobre qué servicio de la cooperativa es su caso?</p>
+                            <select class="form-select rounded-3" name="idServicio">
                                 <option value="">Seleccionar servicio...</option>
                                 <option value="sv-01">Crédito</option>
                                 <option value="sv-02">Ahorro y Captación</option>
@@ -139,61 +137,61 @@
                             </select>
                         </div>
                         <div class="col-12 col-sm-6">
-                            <label class="xxs-text fw-semibold text-uppercase text-gray-5 mb-1">Categoría <span class="text-danger">*</span></label>
-                            <p class="xxs-text text-gray-5 mb-1">Seleccione primero el servicio para ver las categorías disponibles</p>
-                            <select class="form-select form-select-sm rounded-3" name="idCategoria" disabled>
+                            <label class="text mb-1">Categoría <span class="text-danger">*</span></label>
+                            <p class="xs-text text-gray-5 mb-1">Seleccione primero el servicio para ver las categorías disponibles</p>
+                            <select class="form-select rounded-3" name="idCategoria" disabled>
                                 <option value="">Seleccionar categoría...</option>
                             </select>
                         </div>
                         <div class="col-12 col-sm-6">
-                            <label class="xxs-text fw-semibold text-uppercase text-gray-5 mb-1">Subcategoría <span class="text-danger">*</span></label>
-                            <p class="xxs-text text-gray-5 mb-1">Seleccione la subcategoría que mejor describe su caso</p>
-                            <select class="form-select form-select-sm rounded-3" name="idSubcategoria" disabled>
+                            <label class="text mb-1">Subcategoría <span class="text-danger">*</span></label>
+                            <p class="xs-text text-gray-5 mb-1">Seleccione la subcategoría que mejor describe su caso</p>
+                            <select class="form-select rounded-3" name="idSubcategoria" disabled>
                                 <option value="">Seleccionar subcategoría...</option>
                             </select>
                         </div>
                         <div class="col-12">
-                            <label class="xxs-text fw-semibold text-uppercase text-gray-5 mb-1">Descripción detallada del caso <span class="text-danger">*</span></label>
-                            <p class="xxs-text text-gray-5 mb-1">Incluya fechas, montos, números de transacción y cualquier detalle relevante que facilite la gestión de su caso</p>
-                            <textarea rows="5" class="form-control form-control-sm rounded-3" placeholder="Describa su caso con el mayor detalle posible..." name="descripcion"></textarea>
+                            <label class="text mb-1">Descripción detallada del caso <span class="text-danger">*</span></label>
+                            <p class="xs-text text-gray-5 mb-1">Incluya fechas, montos, números de transacción y cualquier detalle relevante que facilite la gestión de su caso</p>
+                            <textarea rows="5" class="form-control" placeholder="Describa su caso con el mayor detalle posible..." name="descripcion"></textarea>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Documentos de soporte -->
-            <div class="card border rounded-4 shadow-sm overflow-hidden">
+            <div class="card border bg-white rounded-4 shadow-sm overflow-hidden">
                 <div class="px-4 py-3 border-bottom">
-                    <h2 class="xs-text fw-bold mb-0">Documentos de soporte</h2>
-                    <p class="xxs-text text-gray-5 mb-0 mt-1">Adjunte capturas de pantalla, comprobantes u otros documentos que respalden su caso (máx. 5 archivos, 5 MB c/u)</p>
+                    <h2 class="fs-6 fw-normal mb-1">Documentos de soporte</h2>
+                    <p class="xs-text text-gray-5 mb-0">Adjunte capturas de pantalla, comprobantes u otros documentos que respalden su caso (máx. 5 archivos, 5 MB c/u)</p>
                 </div>
                 <div class="px-4 py-4">
                     <div class="border border-2 border-dashed rounded-3 p-4 text-center" role="button" onclick="document.getElementById('file-input').click()">
                         <i class="bi bi-upload fs-4 text-gray-5 d-block mb-2"></i>
                         <p class="text mb-1">Arrastre archivos aquí o haga clic para seleccionar</p>
-                        <p class="xxs-text text-gray-5 mb-0">PDF, JPG, PNG, DOCX — máximo 5 MB por archivo</p>
+                        <p class="xs-text text-gray-5 mb-0">PDF, JPG, PNG, DOCX — máximo 5 MB por archivo</p>
                         <input id="file-input" type="file" multiple accept=".pdf,.jpg,.jpeg,.png,.docx" class="d-none">
                     </div>
                 </div>
             </div>
 
             <!-- Autorización -->
-            <div class="card border rounded-4 shadow-sm px-4 py-4">
+            <div class="card border bg-white rounded-4 shadow-sm px-4 py-4">
                 <div class="d-flex align-items-start gap-3 p-3 rounded-3 border bg-light">
                     <input type="checkbox" id="aceptaTratamiento" class="form-check-input mt-1 flex-shrink-0" name="aceptaTratamiento">
-                    <label for="aceptaTratamiento" class="xxs-text text-dark">
+                    <label for="aceptaTratamiento" class="text text-dark">
                         Autorizo a <strong>CoopFinanzas</strong> para recolectar, almacenar, usar y tratar mis datos personales conforme a la <a href="#" class="text-primary fw-semibold">Política de Tratamiento de Datos Personales</a> y la Ley 1581 de 2012, con el fin de gestionar mi solicitud FPQRS y contactarme durante el proceso de atención.
                     </label>
                 </div>
             </div>
 
             <!-- Submit -->
-            <div class="card border rounded-4 shadow-sm px-4 py-4 d-flex flex-column flex-sm-row align-items-center justify-content-between gap-3">
+            <div class="card border bg-white rounded-4 shadow-sm px-4 py-4 d-flex flex-column flex-sm-row align-items-center justify-content-between gap-3">
                 <div>
-                    <p class="xs-text fw-semibold mb-0">¿Listo para radicar su caso?</p>
-                    <p class="xxs-text text-gray-5 mb-0">Recibirá un número de radicado y confirmación por correo electrónico</p>
+                    <p class="text mb-0">¿Listo para radicar su caso?</p>
+                    <p class="xs-text text-gray-5 mb-0">Recibirá un número de radicado y confirmación por correo electrónico</p>
                 </div>
-                <button type="submit" class="btn btn-primary rounded-3 d-flex align-items-center gap-2 px-4">
+                <button type="submit" class="btn btn-primary rounded-3 d-flex text align-items-center gap-2 px-4">
                     Radicar caso FPQRS <i class="bi bi-chevron-right"></i>
                 </button>
             </div>
@@ -203,8 +201,8 @@
 
     <footer class="bg-white border-top py-3 mt-4">
         <div class="container-lg px-4 d-flex flex-column flex-sm-row align-items-center justify-content-between gap-2">
-            <p class="xxs-text text-gray-5 mb-0">© 2026 CoopFinanzas. Sistema FPQRS — Normativa SFC Colombia</p>
-            <p class="xxs-text text-gray-5 mb-0">¿Necesita ayuda? Llame al <strong class="text-dark">01 8000 123 456</strong></p>
+            <p class="xs-text text-gray-5 mb-0">© 2026 CoopFinanzas. Sistema FPQRS — Normativa SFC Colombia</p>
+            <p class="xs-text text-gray-5 mb-0">¿Necesita ayuda? Llame al <strong class="text-dark">01 8000 123 456</strong></p>
         </div>
     </footer>
 

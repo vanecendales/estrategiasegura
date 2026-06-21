@@ -148,7 +148,9 @@ label.form-check-label {
   font-size: var(--bs-font-m);
 }
 
-
+.form-control, .form-select {
+    background-color: var(--bs-body-bg)!IMPORTANT;
+}
 /* ==========================================================
    BUTTONS
    ========================================================== */
