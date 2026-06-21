@@ -53,7 +53,9 @@ label.form-check-label {
 .xxxs-text {
   font-size: var(--bs-font-xxxs);
 }
-
+.text-11{
+  font-size: 11px;
+}
 .text-secondary,
 .demo-item .text-secondary {
   font-size: var(--bs-font-xs);
@@ -71,12 +73,20 @@ label.form-check-label {
 a.nav-link i {
     font-size: 1.1rem;
 }
-/* ==========================================================
-   SPACING & UTILITIES
-   ========================================================== */
 .tracking-1{
 letter-spacing:.1rem;   
 }
+
+.text-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+/* ==========================================================
+   SPACING & UTILITIES
+   ========================================================== */
+
 .opacity-5 {
     opacity: .5;
 }
@@ -115,7 +125,9 @@ letter-spacing:.1rem;
     padding-bottom: 1.25rem;
     padding-top: 1.25rem;
 }
-
+.max-w-cont {
+    max-width: 56rem;
+}
 
 /* ==========================================================
    FORMS
@@ -185,8 +197,16 @@ button.btn:hover {
   width: var(--sidebar-w) !important;
 }
 #sidebar.collapsed {
-  min-width: 65px !important;
-  width: 65px !important;
+  min-width: 60px !important;
+  width: 60px !important;
+}
+.chevron-toggle {
+    transition: transform .2s ease;
+    display: inline-block;
+}
+
+button[aria-expanded="true"] .chevron-toggle {
+    transform: rotate(180deg);
 }
 #sidebar.collapsed .sidebar-text {
     display: none;
@@ -203,6 +223,11 @@ button.btn:hover {
   color: var(--bs-light) !important;
   border: 2px solid inherit;
 }
+.collapsed.badge.bg-danger {
+    position: absolute ! IMPORTANT;
+     right: 0px !important;
+}
+
 
 #sidebar .badge.bg-danger {
   width: 20px;
@@ -263,11 +288,7 @@ aside p {
 /* ==========================================================
    NAV & TABS
    ========================================================== */
-
-.nav-item i.bi {
-  font-size: 1.1rem;
-}
-
+  
 .nav-underline .nav-link.active {
   color: var(--bs-primary) !important;
 }

@@ -67,9 +67,8 @@ li.nav-item > button > span {
 .hist-adjunto-ini { color: var(--hist-adjunto-ini); background-color: var(--hist-adjunto-ini-bg); }
 .hist-adjunto     { color: var(--hist-adjunto);     background-color: var(--hist-adjunto-bg); }
 
-.hist-card-reasignacion { background-color: var(--status-asignado-bg);   border-color: #e9d5ff !important; }
+.list-card-reasignacion { background-color: var(--status-asignado-bg);   border-color: #e9d5ff !important; }
 .hist-card-creacion     { background-color: var(--status-radicado-bg);   border-color: var(--status-radicado-bg) !important; }
-.hist-card-estado       { background-color: var(--status-engestion-bg);  border-color: var(--status-engestion-bg) !important; }
 .hist-card-prioridad    { background-color: var(--sla-amarillo-bg);      border-color: var(--sla-amarillo-bg) !important; }
 .hist-card-observacion  { background-color: var(--status-cerrado-bg);    border-color: var(--status-cerrado-bg) !important; }
 .hist-card-comentario   { background-color: var(--status-radicado-bg);   border-color: var(--status-radicado-bg) !important; }

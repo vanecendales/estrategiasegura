@@ -1,0 +1,331 @@
+     <div class="d-flex align-items-center justify-content-between mb-3">
+                                        <span class="text d-flex align-items-center gap-2 py-1">
+                                            <i class="bi bi-paperclip text text-primary"></i> Adjuntos <span
+                                                class="text-gray-5 xxs-text">3</span>
+                                        </span>
+                                        <div class="d-flex align-items-center gap-2 xs-text">
+                                            <select id="filtro-tipo"
+                                                class="form-select form-select-sm rounded-4 bg-white xs-text">
+                                                <option value="">Todos los tipos</option>
+                                                <option value="Registro inicial">Registro inicial</option>
+                                                <option value="Gestión interna">Gestión interna</option>
+                                                <option value="Cierre">Cierre</option>
+                                                <option value="Respuesta al asociado">Respuesta al asociado</option>
+                                            </select>
+                                            <button
+                                                class="btn btn-primary btn-sm rounded-4 d-flex align-items-center text-nowrap gap-2 py-0 px-3 xs-text"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#form-cargar-adjunto" aria-expanded="false">
+                                                <i class="bi bi-plus"></i> Cargar adjunto
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="collapse mb-3" id="form-cargar-adjunto">
+                                        <div class="border rounded-3 overflow-hidden">
+                                            <div class="px-3 py-2 border-bottom bg-light bg-opacity-50">
+                                                <p class="xxs-text text-uppercase fw-semibold text-gray-5 mb-0">Cargar
+                                                    nuevo adjunto</p>
+                                            </div>
+                                            <div class="p-3">
+                                                <div class="border-dashed rounded-3 p-4 text-center mb-3"
+                                                    onclick="document.getElementById('input-archivo').click()"
+                                                    role="button">
+                                                    <input type="file" id="input-archivo" class="d-none">
+                                                    <i class="bi bi-upload fs-4 text-primary d-block mb-2"></i>
+                                                    <p class="text text-primary mb-1">Haga clic o arrastre un archivo
+                                                        aquí</p>
+                                                    <p class="xxs-text text-gray-5 mb-0">PDF, Word, Excel, imágenes,
+                                                        audio, video · Máx. 20 MB</p>
+                                                </div>
+
+                                                <div
+                                                    class="d-flex align-items-center gap-3 rounded-3 px-3 py-2 mb-3 bg-primary bg-opacity-10">
+                                                    <i
+                                                        class="bi bi-shield-check xxs-text text-primary flex-shrink-0"></i>
+                                                    <p class="xxs-text text-primary mb-0">Solo se permiten archivos
+                                                        seguros. Ejecutables, scripts y archivos comprimidos están
+                                                        bloqueados.</p>
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <label class="xxs-text text-uppercase fw-semibold text-gray-5 mb-1">
+                                                        Tipo de adjunto <span class="text-danger">*</span>
+                                                    </label>
+                                                    <select class="form-select form-select-sm rounded-3">
+                                                        <option value="">Seleccione un tipo</option>
+                                                        <option>Registro inicial</option>
+                                                        <option>Gestión interna</option>
+                                                        <option>Cierre</option>
+                                                        <option>Respuesta al asociado</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <label
+                                                        class="xxs-text text-uppercase fw-semibold text-gray-5 mb-2">Visibilidad</label>
+                                                    <div class="d-flex align-items-center gap-4">
+                                                        <div class="form-check mb-0">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="visibilidad" id="vis-interno" checked>
+                                                            <label
+                                                                class="form-check-label xs-text d-flex align-items-center gap-1"
+                                                                for="vis-interno">
+                                                                <i class="bi bi-eye-slash text-gray-5"></i> Solo interno
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mb-0">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="visibilidad" id="vis-asociado">
+                                                            <label
+                                                                class="form-check-label xs-text d-flex align-items-center gap-1"
+                                                                for="vis-asociado">
+                                                                <i class="bi bi-eye text-primary"></i> Visible al
+                                                                asociado
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex justify-content-end align-items-center gap-2">
+                                                    <button class="btn btn-sm btn-link text-gray-5 text-decoration-none"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#form-cargar-adjunto">
+                                                        Cancelar
+                                                    </button>
+                                                    <button
+                                                        class="btn btn-primary btn-sm rounded-3 d-flex align-items-center gap-2">
+                                                        <i class="bi bi-upload"></i> Cargar archivo
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="lista-adjuntos" class="d-flex flex-column gap-2">
+
+                                        <div class="card border rounded-4 overflow-hidden bg-white "
+                                            data-tipo="Registro inicial">
+                                            <div class="d-flex align-items-center gap-3 px-3 py-25">
+                                                <div class="d-flex align-items-center justify-content-center stat-icon">
+                                                    <i class="bi bi-file-text text-primary"></i>
+                                                </div>
+                                                <div class="flex-grow-1 min-w-0">
+                                                    <div class="d-flex align-items-center gap-2 flex-wrap">
+                                                        <p class="text text-dark text-truncate file-name-truncate mb-0 fw-medium">
+                                                            comprobante_pse_20260503.pdf</p>
+                                                        <span class="badge-soft status-radicado xxs-text">Registro
+                                                            inicial</span>
+                                                        <span
+                                                            class="badge-soft status-cerrado d-flex align-items-center gap-1 xxs-text">
+                                                            <i class="bi bi-eye-slash"></i> Interno
+                                                        </span>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex align-items-center gap-3 mt-1 text-gray-5 xxs-text font-monospace">
+                                                        <span>245.0 KB</span>
+                                                        <span class="text-uppercase fw-semibold">.pdf</span>
+                                                        <span>04/05/2026 19:05</span>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-link p-0 border-0 text-gray-5 flex-shrink-0"
+                                                    type="button" data-bs-toggle="collapse" data-bs-target="#meta-doc-1"
+                                                    aria-expanded="false">
+                                                    <i class="bi bi-chevron-down chevron-toggle"></i>
+                                                </button>
+                                            </div>
+                                            <div class="collapse" id="meta-doc-1">
+                                                <div class="border-top px-4 py-3">
+                                                    <div class="row row-cols-3 g-3 xs-text">
+                                                        <div>
+                                                            <p
+                                                                class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
+                                                                Cargado por</p>
+                                                            <p class="mb-0 d-flex align-items-center gap-1"><i
+                                                                    class="bi bi-person"></i> Valentina Ospina Ríos</p>
+                                                        </div>
+                                                        <div>
+                                                            <p
+                                                                class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
+                                                                Fecha de carga</p>
+                                                            <p class="mb-0 d-flex align-items-center gap-1"><i
+                                                                    class="bi bi-clock"></i> 04/05/2026 19:05</p>
+                                                        </div>
+                                                        <div>
+                                                            <p
+                                                                class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
+                                                                IP de carga</p>
+                                                            <p class="mb-0 font-monospace">190.24.135.78</p>
+                                                        </div>
+                                                        <div>
+                                                            <p
+                                                                class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
+                                                                Tipo MIME</p>
+                                                            <p class="mb-0 font-monospace">application/pdf</p>
+                                                        </div>
+                                                        <div>
+                                                            <p
+                                                                class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
+                                                                Tamaño</p>
+                                                            <p class="mb-0">245.0 KB</p>
+                                                        </div>
+                                                        <div>
+                                                            <p
+                                                                class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
+                                                                Tipo adjunto</p>
+                                                            <p class="mb-0">Registro inicial</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card border rounded-4 overflow-hidden bg-white "
+                                            data-tipo="Registro inicial">
+                                            <div class="d-flex align-items-center gap-3 px-3 py-25">
+                                                <div
+                                                    class="rounded-3 d-flex align-items-center justify-content-center flex-shrink-0 bg-primary text-blue-500 bg-opacity-10 stat-icon">
+                                                    <i class="bi bi-image"></i>
+                                                </div>
+                                                <div class="flex-grow-1 min-w-0">
+                                                    <div class="d-flex align-items-center gap-2 flex-wrap">
+                                                        <p class="text text-dark text-truncate file-name-truncate mb-0 fw-medium">
+                                                            captura_transaccion.png</p>
+                                                        <span class="badge-soft status-radicado xxs-text">Registro
+                                                            inicial</span>
+                                                        <span
+                                                            class="badge-soft status-cerrado d-flex align-items-center gap-1 xxs-text">
+                                                            <i class="bi bi-eye-slash"></i> Interno
+                                                        </span>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex align-items-center gap-3 mt-1 text-gray-5 xxs-text font-monospace">
+                                                        <span>128.0 KB</span>
+                                                        <span class="text-uppercase fw-semibold">.png</span>
+                                                        <span>04/05/2026 19:07</span>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-link p-0 border-0 text-gray-5 flex-shrink-0"
+                                                    type="button" data-bs-toggle="collapse" data-bs-target="#meta-doc-2"
+                                                    aria-expanded="false">
+                                                    <i class="bi bi-chevron-down chevron-toggle"></i>
+                                                </button>
+                                            </div>
+                                            <div class="collapse" id="meta-doc-2">
+                                                <div class="border-top px-4 py-3">
+                                                    <div class="row row-cols-3 g-3 xs-text">
+                                                        <div>
+                                                            <p
+                                                                class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
+                                                                Cargado por</p>
+                                                            <p class="mb-0 d-flex align-items-center gap-1"><i
+                                                                    class="bi bi-person"></i> Valentina Ospina Ríos</p>
+                                                        </div>
+                                                        <div>
+                                                            <p
+                                                                class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
+                                                                Fecha de carga</p>
+                                                            <p class="mb-0 d-flex align-items-center gap-1"><i
+                                                                    class="bi bi-clock"></i> 04/05/2026 19:07</p>
+                                                        </div>
+                                                        <div>
+                                                            <p
+                                                                class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
+                                                                IP de carga</p>
+                                                            <p class="mb-0 font-monospace">190.24.135.78</p>
+                                                        </div>
+                                                        <div>
+                                                            <p
+                                                                class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
+                                                                Tipo MIME</p>
+                                                            <p class="mb-0 font-monospace">image/png</p>
+                                                        </div>
+                                                        <div>
+                                                            <p
+                                                                class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
+                                                                Tamaño</p>
+                                                            <p class="mb-0">128.0 KB</p>
+                                                        </div>
+                                                        <div>
+                                                            <p
+                                                                class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
+                                                                Tipo adjunto</p>
+                                                            <p class="mb-0">Registro inicial</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card border rounded-4 overflow-hidden bg-white"
+                                            data-tipo="Gestión interna">
+                                            <div class="d-flex align-items-center gap-3 px-3 py-25">
+                                                <div
+                                                    class="rounded-3 d-flex align-items-center justify-content-center stat-icon">
+                                                    <i class="bi bi-file-text text-primary"></i>
+                                                </div>
+                                                <div class="flex-grow-1 min-w-0">
+                                                    <div class="d-flex align-items-center gap-2 flex-wrap">
+                                                        <p class="text text-dark text-truncate file-name-truncate mb-0 fw-medium">
+                                                            respuesta_pse_interbancaria.pdf</p>
+                                                        <span class="badge-soft status-cerrado xxs-text">Gestión
+                                                            interna</span>
+                                                        <span
+                                                            class="badge-soft status-cerrado d-flex align-items-center gap-1 xxs-text">
+                                                            <i class="bi bi-eye-slash"></i> Interno
+                                                        </span>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex align-items-center gap-3 mt-1 text-gray-5 xxs-text font-monospace">
+                                                        <span>180.0 KB</span>
+                                                        <span class="text-uppercase fw-semibold">.pdf</span>
+                                                        <span>05/05/2026 09:45</span>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-link p-0 border-0 text-gray-5 flex-shrink-0"
+                                                    type="button" data-bs-toggle="collapse" data-bs-target="#meta-doc-3"
+                                                    aria-expanded="false">
+                                                    <i class="bi bi-chevron-down chevron-toggle"></i>
+                                                </button>
+                                            </div>
+                                            <div class="collapse" id="meta-doc-3">
+                                                <div class="border-top px-4 py-3">
+                                                    <div class="row row-cols-3 g-3 xs-text">
+                                                        <div>
+                                                            <p class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
+                                                                Cargado por</p>
+                                                            <p class="mb-0 d-flex align-items-center gap-1"><i
+                                                                    class="bi bi-person"></i> Rodrigo Esteban Muñoz</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
+                                                                Fecha de carga</p>
+                                                            <p class="mb-0 d-flex align-items-center gap-1"><i
+                                                                    class="bi bi-clock"></i> 05/05/2026 09:45</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
+                                                                IP de carga</p>
+                                                            <p class="mb-0 font-monospace">190.24.135.78</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
+                                                                Tipo MIME</p>
+                                                            <p class="mb-0 font-monospace">application/pdf</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
+                                                                Tamaño</p>
+                                                            <p class="mb-0">180.0 KB</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="text-gray-5 text-uppercase fw-semibold xxs-text mb-1">
+                                                                Tipo adjunto</p>
+                                                            <p class="mb-0">Gestión interna</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
