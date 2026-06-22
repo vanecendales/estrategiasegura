@@ -17,6 +17,11 @@ Características principales:
 * Consumo de datos desde JSON.
 * Navegación entre vistas sin backend.
 
+Adicionales:
+* creacion de sumario: index.html
+* Sidebar colapsado en responsive
+* En la migracion de tailwind a Bootstrap algunas clases relacionadas con espacios varian ligeramente, igual que los colores pero estos ultimos si fueron importados del css de prueba para mayor identidad con la anterior version.
+
 ---
 
 ## Tecnologías Utilizadas
@@ -25,12 +30,10 @@ Características principales:
 * CSS3
 * JavaScript (ES6+)
 * jQuery
-* Bootstrap 5
-* DataTables
+* Bootstrap 5.3
+* JSON
 
 ---
-
-## Estructura del Proyecto
 
 ## Estructura del Proyecto
 
@@ -67,9 +70,9 @@ ESTRATEGIASEGURA
 │   ├── dashboard.html
 │   ├── fpqr.html
 │   ├── login.html
-│   └── index.html
 │
 └── README.md
+└── index.html
 ```
 ---
 
@@ -78,7 +81,7 @@ ESTRATEGIASEGURA
 La aplicación consume información desde:
 
 ```text
-.data.json
+assets/js/.data.json
 ```
 
 Este archivo funciona como una base de datos simulada para el entorno de desarrollo y contiene la información utilizada por:
@@ -89,6 +92,7 @@ Este archivo funciona como una base de datos simulada para el entorno de desarro
 * Actividades
 * Historiales
 * Métricas mostradas en el dashboard
+* Filtros y botones expandibles funcionales
 
 ---
 
@@ -168,11 +172,10 @@ http://localhost:8000
 ## Autor
 
 ### Vanessa Cendales
-
 UI/UX Designer & Front-End Developer
 
-GitHub:
-https://github.com/vanecendales
+Website:
+https://vanecendales.github.io/vanecendales.io/#/
 
 LinkedIn:
 https://www.linkedin.com/in/vanessa-cendales/

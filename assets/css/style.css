@@ -197,8 +197,8 @@ button.btn:hover {
   width: var(--sidebar-w) !important;
 }
 #sidebar.collapsed {
-  min-width: 60px !important;
-  width: 60px !important;
+  min-width: 64px !important;
+  width: 64px !important;
 }
 .chevron-toggle {
     transition: transform .2s ease;
@@ -282,7 +282,9 @@ li.nav-item {
     transition: transform 0.3s ease, width 0.3s ease;
   }
 
-
+a.nav-link i {
+    font-size: 1.05rem;
+}
   #sidebar:not(.collapsed) {
     box-shadow: 4px 0 15px rgba(0, 0, 0, 0.25);
   }
