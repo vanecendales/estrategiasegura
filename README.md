@@ -17,6 +17,7 @@ Características principales:
 * Consumo de datos desde JSON.
 * Navegación entre vistas sin backend.
 
+###sumario: index.html
 ---
 
 ## Tecnologías Utilizadas
@@ -29,8 +30,6 @@ Características principales:
 * DataTables
 
 ---
-
-## Estructura del Proyecto
 
 ## Estructura del Proyecto
 
@@ -67,9 +66,9 @@ ESTRATEGIASEGURA
 │   ├── dashboard.html
 │   ├── fpqr.html
 │   ├── login.html
-│   └── index.html
 │
 └── README.md
+└── index.html
 ```
 ---
 
@@ -78,7 +77,7 @@ ESTRATEGIASEGURA
 La aplicación consume información desde:
 
 ```text
-.data.json
+assets/js/.data.json
 ```
 
 Este archivo funciona como una base de datos simulada para el entorno de desarrollo y contiene la información utilizada por:
