@@ -119,7 +119,7 @@ Para que las tablas dinámicas y los scripts funcionen correctamente, el proyect
 
 1. Instalar la extensión Live Server.
 2. Abrir el proyecto en Visual Studio Code.
-3. Clic derecho sobre `dashboard.html`.
+3. Clic derecho sobre `index.html`.
 4. Seleccionar **Open with Live Server**.
 
 ### Node.js
