@@ -32,20 +32,45 @@ Características principales:
 
 ## Estructura del Proyecto
 
+## Estructura del Proyecto
+
 ```text
-/
+ESTRATEGIASEGURA
+│
 ├── assets/
 │   ├── css/
-│   ├── js/
+│   │   ├── pages/
+│   │   │   ├── case-detail.css
+│   │   │   ├── dashboard.css
+│   │   │   ├── fpqr.css
+│   │   │   └── login.css
+│   │   ├── colors.css
+│   │   └── style.css
+│   │
 │   ├── images/
-│   └── icons/
+│   │   └── logo.webp
+│   │
+│   └── js/
+│       ├── pages/
+│       │   ├── case-detail.js
+│       │   ├── dashboard.js
+│       │   └── login.js
+│       ├── data.json
+│       └── main.js
 │
-├── dashboard.html
-├── case-detail.html
-├── .data.json
+├── components/
+│   ├── tabs/
+│   └── sidebar.html
+│
+├── pages/
+│   ├── case-detail.html
+│   ├── dashboard.html
+│   ├── fpqr.html
+│   ├── login.html
+│   └── index.html
+│
 └── README.md
 ```
-
 ---
 
 ## Fuente de Datos
