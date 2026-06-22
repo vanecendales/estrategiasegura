@@ -20,11 +20,6 @@ Características principales:
 Adicionales:
 * creacion de sumario: index.html
 * Sidebar colapsado en responsive
-* En la migracion de tailwind a Bootstrap algunas clases relacionadas con espacios varian ligeramente, igual que los colores pero estos ultimos si fueron importados del css de prueba para mayor identidad con la anterior version.
-
-Adicionales:
-* creacion de sumario: index.html
-* Sidebar colapsado en responsive
 * En la migracion de tailwind a Bootstrap algunas clases relacionadas con espacios varian ligeramente, igual que los colores pero estos ultimos si fueron importados del css de la prueba para mayor identidad con la anterior version.
 ---
 
@@ -157,7 +152,7 @@ http://localhost:8000
 
 1. Iniciar un servidor local.
 2. Abrir la URL generada por el servidor.
-3. Acceder al Dashboard.
+3. Acceder al Index.html.
 4. Navegar entre las diferentes vistas.
 5. Explorar los datos cargados dinámicamente desde `.data.json`.
 
@@ -176,7 +171,7 @@ http://localhost:8000
 ## Autor
 
 ### Vanessa Cendales
-UI/UX Designer & Front-End Developer
+Product Designer & UI Developer
 
 Website:
 https://vanecendales.github.io/vanecendales.io/#/
