@@ -148,9 +148,7 @@ label.form-check-label {
   font-size: var(--bs-font-m);
 }
 
-.form-control, .form-select {
-    background-color: var(--bs-body-bg)!IMPORTANT;
-}
+
 /* ==========================================================
    BUTTONS
    ========================================================== */
@@ -210,15 +208,16 @@ button.btn:hover {
 button[aria-expanded="true"] .chevron-toggle {
     transform: rotate(180deg);
 }
+
 #sidebar.collapsed .sidebar-text {
-    display: none;
-} 
+    display: none !important;
+}
 #sidebar .text-white-50 {
   color: rgba(var(--bs-white-rgb), .7) !important;
 }
 
-#sidebar .nav-link:not(.active):hover {
-  background-color: rgba(var(--bs-white-rgb), 0.1);
+#sidebar .nav-link:hover {
+  color: white!important;
 }
 
 #sidebar .nav-link.active {
@@ -263,6 +262,15 @@ aside p {
   line-height: 1.625;
   color: var(--bs-texts-color);
 }
+li.nav-item {
+    position: relative;
+}
+    #sidebar.collapsed .badge {
+        position: absolute;
+        top: 4px;
+        left: 25px;
+        margin: 0;
+    }
 
 @media (max-width: 767.98px) {
   #sidebar {
@@ -274,14 +282,8 @@ aside p {
     transition: transform 0.3s ease, width 0.3s ease;
   }
 
-  #sidebar.collapsed {
-
-    width: 0 !important;
-  }
 
   #sidebar:not(.collapsed) {
-    
-    width: 240px;
     box-shadow: 4px 0 15px rgba(0, 0, 0, 0.25);
   }
 }

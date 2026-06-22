@@ -21,7 +21,7 @@ const BADGE_ESTADO = {
   'Reabierto':     'badge-soft status-reabierto',
   'Anulado':       'badge-soft status-anulado',
   'Asignado':      'badge-soft status-asignado',
-  'Escalado':      'badge-soft status-reabierto' // si no existe status-escalado
+  'Escalado':      'badge-soft status-reabierto'
 };
 
 const SEMAFORO = {
@@ -63,10 +63,8 @@ function renderTabla() {
   }
 
   tbody.innerHTML = slice.map((c, i) => {
-    // Corrección aquí: Aseguramos que busque la llave exacta del objeto SEMAFORO o caiga en 'Cerrado'
     const valorSemaforo = c.semaforo || 'Cerrado';
     const sla = SEMAFORO[valorSemaforo] || SEMAFORO['Cerrado'];
-    
     const alt = i % 2 !== 0 ? 'class="table-row-alt"' : '';
     const slaFecha = (valorSemaforo === 'Próximo a vencer' || valorSemaforo === 'Vencido')
       ? 'fw-semibold text-warning' : 'x-small';
@@ -74,10 +72,10 @@ function renderTabla() {
     return `<tr ${alt}>
       <td class="px-3 py-3 xs-text text-gray-7">${c.id}</td>
       <td class="px-3 py-3 xs-text text-gray-5">${c.fecha}</td>
-      <td class="px-3 py-3 xxs-text "><span class="${BADGE_TIPO[c.tipo] || 'badge text-bg-secondary'}">${c.tipo}</span></td>
+      <td class="px-3 py-3 xxs-text"><span class="${BADGE_TIPO[c.tipo] || 'badge text-bg-secondary'}">${c.tipo}</span></td>
       <td class="px-3 py-3 xs-text text-gray-7">${c.servicio}</td>
       <td class="px-3 py-3 xs-text text-wrap text-gray-7">${c.categoria}</td>
-      <td class="px-3 py-3 xs-text text-gray-5" ><span class="cell-truncate" title="${c.subcategoria}">${c.subcategoria}</span></td>
+      <td class="px-3 py-3 xs-text text-gray-5"><span class="cell-truncate" title="${c.subcategoria}">${c.subcategoria}</span></td>
       <td class="px-3 py-3 xs-text text-gray-7" title="${c.asociado}">${c.asociado}</td>
       <td class="px-3 py-3 xs-text text-gray-5" title="${c.responsable}">${c.responsable}</td>
       <td class="px-3 py-3 xs-text text-gray-5"><span class="${BADGE_PRIORIDAD[c.prioridad] || 'badge text-bg-secondary'}">${c.prioridad}</span></td>
@@ -86,7 +84,6 @@ function renderTabla() {
       <td class="px-3 py-3 xs-text text-gray-5"><span class="${sla.cls}"><span class="sla-dot" style="background:${sla.dot};"></span>${valorSemaforo}</span></td>
       <td class="px-3 py-3 xs-text text-gray-5 text-end"><a href="case-detail.html" class="btn-action" title="Ver detalle"><i class="bi bi-eye"></i></a></td>
     </tr>`;
-
   }).join('');
 
   renderPaginacion();
@@ -124,24 +121,6 @@ function actualizarContador() {
   document.getElementById('contador-total').textContent = casosFiltrados.length;
 }
 
-function initSidebar() {
-  const sidebar = document.getElementById('sidebar');
-  const btn     = document.getElementById('sidebar-toggle');
-  const icon    = document.getElementById('sidebar-toggle-icon');
-  let collapsed = false;
-
-  btn.addEventListener('click', () => {
-    collapsed = !collapsed;
-    sidebar.style.width = collapsed ? '60px' : '240px';
-    sidebar.querySelectorAll('.sidebar-text').forEach(el => {
-      el.style.display = collapsed ? 'none' : '';
-    });
-    icon.className     = collapsed ? 'bi bi-chevron-right' : 'bi bi-chevron-left';
-    icon.style.fontSize = '.65rem';
-    icon.style.color    = '#64748b';
-  });
-}
-
 function initBusqueda() {
   document.getElementById('input-busqueda').addEventListener('input', function () {
     const q = this.value.toLowerCase().trim();
@@ -170,7 +149,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     casosOriginal  = data.casos;
     casosFiltrados = [...casosOriginal];
     renderTabla();
-    initSidebar();
     initBusqueda();
     initSelector();
   } catch (err) {

@@ -9,7 +9,9 @@
 .footer text {
     display: block;
 }
-
+.form-control, .form-select {
+    background-color: white!important;
+}
 small.opacity-55:first-child {
     font-size: 1em;
 }
@@ -42,5 +44,5 @@ small.text-secondary.container-fluid.mt-6 {
 
 .login-wrapper {
     width: 100%;
-    max-width: 28rem;
+    max-width: 30rem;
 }
