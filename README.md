@@ -17,7 +17,10 @@ Características principales:
 * Consumo de datos desde JSON.
 * Navegación entre vistas sin backend.
 
-###sumario: index.html
+Adicionales:
+* creacion de sumario: index.html
+* Sidebar colapsado en responsive
+* En la migracion de tailwind a Bootstrap algunas clases relacionadas con espacios varian ligeramente, igual que los colores pero estos ultimos si fueron importados del css de la prueba para mayor identidad con la anterior version.
 ---
 
 ## Tecnologías Utilizadas
